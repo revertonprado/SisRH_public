@@ -36,12 +36,16 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEntrar = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.picSair = new System.Windows.Forms.PictureBox();
+            this.picOlho = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSair)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picOlho)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,14 +65,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1, 383);
+            this.panel2.Size = new System.Drawing.Size(1, 346);
             this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Gold;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(1, 383);
+            this.panel3.Location = new System.Drawing.Point(1, 346);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(313, 1);
             this.panel3.TabIndex = 2;
@@ -79,7 +83,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(313, 1);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1, 382);
+            this.panel4.Size = new System.Drawing.Size(1, 345);
             this.panel4.TabIndex = 3;
             // 
             // panel5
@@ -125,21 +129,23 @@
             this.textBox2.Size = new System.Drawing.Size(170, 20);
             this.textBox2.TabIndex = 10;
             // 
-            // button1
+            // btnEntrar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Gold;
-            this.button1.Location = new System.Drawing.Point(40, 294);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 30);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnEntrar.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
+            this.btnEntrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntrar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.ForeColor = System.Drawing.Color.Gold;
+            this.btnEntrar.Location = new System.Drawing.Point(40, 294);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(230, 30);
+            this.btnEntrar.TabIndex = 11;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.MouseEnter += new System.EventHandler(this.btnEntrar_MouseEnter);
+            this.btnEntrar.MouseLeave += new System.EventHandler(this.btnEntrar_MouseLeave);
             // 
             // linkLabel1
             // 
@@ -152,14 +158,38 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Redefina a senha";
             // 
-            // pictureBox3
+            // pictureBox5
             // 
-            this.pictureBox3.Image = global::SisRH.Properties.Resources.hide;
-            this.pictureBox3.Location = new System.Drawing.Point(246, 210);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 27);
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
+            this.pictureBox5.Image = global::SisRH.Properties.Resources.Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__9__removebg_preview__1_;
+            this.pictureBox5.Location = new System.Drawing.Point(103, 60);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(118, 72);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 14;
+            this.pictureBox5.TabStop = false;
+            // 
+            // picSair
+            // 
+            this.picSair.Image = global::SisRH.Properties.Resources.switch__1_;
+            this.picSair.Location = new System.Drawing.Point(276, 12);
+            this.picSair.Name = "picSair";
+            this.picSair.Size = new System.Drawing.Size(26, 25);
+            this.picSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSair.TabIndex = 13;
+            this.picSair.TabStop = false;
+            this.picSair.MouseEnter += new System.EventHandler(this.picSair_MouseEnter);
+            this.picSair.MouseLeave += new System.EventHandler(this.picSair_MouseLeave);
+            // 
+            // picOlho
+            // 
+            this.picOlho.Image = global::SisRH.Properties.Resources.hide;
+            this.picOlho.Location = new System.Drawing.Point(246, 210);
+            this.picOlho.Name = "picOlho";
+            this.picOlho.Size = new System.Drawing.Size(24, 27);
+            this.picOlho.TabIndex = 8;
+            this.picOlho.TabStop = false;
+            this.picOlho.MouseEnter += new System.EventHandler(this.picOlho_MouseEnter);
+            this.picOlho.MouseLeave += new System.EventHandler(this.picOlho_MouseLeave);
             // 
             // pictureBox2
             // 
@@ -184,12 +214,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.ClientSize = new System.Drawing.Size(314, 384);
+            this.ClientSize = new System.Drawing.Size(314, 347);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.picSair);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.picOlho);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel6);
@@ -202,7 +234,9 @@
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSair)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picOlho)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -220,10 +254,12 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox picOlho;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox picSair;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

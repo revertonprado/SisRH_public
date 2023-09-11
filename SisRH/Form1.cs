@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SisRH
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class Form1 : Form
     {
         public Form1()
         {
@@ -20,21 +20,6 @@ namespace SisRH
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void metroTextBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

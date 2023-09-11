@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SisRH.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,5 +27,48 @@ namespace SisRH
         {
 
         }
+        //private void MudarCor(Object sender, EventArgs e)
+        //{
+        //    if (btnEntrar.MouseHover += true)
+        //    {
+        //        btnEntrar.ForeColor = Color.FromArgb(52, 73, 94);
+        //    }
+        //    else
+        //    {
+        //        btnEntrar.ForeColor = Color.FromArgb(255, 215, 0);
+        //    }
+
+        //}
+        private void btnEntrar_MouseEnter(object sender, EventArgs e)
+        {
+            btnEntrar.ForeColor = Color.FromArgb(52, 73, 94);
+        }
+
+        private void btnEntrar_MouseLeave(object sender, EventArgs e)
+        {
+            btnEntrar.ForeColor = Color.FromArgb(255, 215, 0);
+        }
+
+        private void picSair_MouseLeave(object sender, EventArgs e)
+        {
+            picSair.Image = Resources.switch__1_;
+        }
+
+        private void picSair_MouseEnter(object sender, EventArgs e)
+        {
+            picSair.Image = Resources.switch__2_;
+
+        }
+        private void picOlho_MouseEnter(object sender, EventArgs e)
+        {
+            picOlho.Image = Resources.hide;
+
+        }
+        private void picOlho_MouseLeave(object sender, EventArgs e)
+        {
+            picOlho.Image = Resources.visibility;
+
+        }
+
     }
 }

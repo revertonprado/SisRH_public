@@ -138,5 +138,30 @@
   <ItemGroup>
     <None Include="Resources\user %282%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__9_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__9_-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch %284%29.png" />
+    <None Include="Resources\Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__11_-removebg-preview.png" />
+    <None Include="Resources\switch %283%29.png" />
+    <None Include="Resources\visible1.png" />
+    <None Include="Resources\user %284%29.png" />
+    <None Include="Resources\padlock %281%29.png" />
+    <None Include="Resources\user %283%29.png" />
+    <None Include="Resources\Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__10_-removebg-preview.png" />
+    <Content Include="Resources\switch %282%29.png" />
+    <None Include="Resources\visibility.png" />
+    <None Include="Resources\switch %282%291.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
