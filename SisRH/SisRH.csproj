@@ -161,6 +161,10 @@
     <None Include="Resources\Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__9_-removebg-preview %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\visibility2.png" />
+    <None Include="Resources\switch uu.png" />
+    <None Include="Resources\switch %286%29.png" />
+    <None Include="Resources\switch %285%29.png" />
     <None Include="Resources\user %285%292.png" />
     <None Include="Resources\user %285%291.png" />
     <None Include="Resources\user %285%29.png" />
@@ -198,6 +202,10 @@
     <None Include="Resources\lock1.png" />
     <None Include="Resources\Captura_de_tela_2023-09-11_213254-removebg-preview.png" />
     <None Include="Resources\Captura_de_tela_2023-09-11_213254-removebg-preview %281%29.png" />
+    <None Include="Resources\power-on %281%29.png" />
+    <None Include="Resources\power-on.png" />
+    <None Include="Resources\power-on %283%29.png" />
+    <None Include="Resources\power-on %282%29.png" />
     <Content Include="Resources\switch %282%29.png" />
     <None Include="Resources\visibility.png" />
     <None Include="Resources\switch %282%291.png" />
