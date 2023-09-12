@@ -55,24 +55,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Classes\Transform.cs" />
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas exemplo\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas exemplo\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Telas exemplo\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
+    <Compile Include="Telas exemplo\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas exemplo\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
+    <EmbeddedResource Include="Telas exemplo\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -151,6 +161,19 @@
     <None Include="Resources\Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__9_-removebg-preview %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\user %285%292.png" />
+    <None Include="Resources\user %285%291.png" />
+    <None Include="Resources\user %285%29.png" />
+    <None Include="Resources\visible_blue.png" />
+    <None Include="Resources\visible %281%29.png" />
+    <None Include="Resources\switch1.png" />
+    <None Include="Resources\switch %282%292.png" />
+    <None Include="Resources\visibility1.png" />
+    <None Include="Resources\user %283%291.png" />
+    <None Include="Resources\user %284%291.png" />
+    <None Include="Resources\visible2.png" />
+    <None Include="Resources\switch %283%291.png" />
+    <None Include="Resources\switch %284%291.png" />
     <None Include="Resources\switch %284%29.png" />
     <None Include="Resources\Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__11_-removebg-preview.png" />
     <None Include="Resources\switch %283%29.png" />
@@ -159,6 +182,22 @@
     <None Include="Resources\padlock %281%29.png" />
     <None Include="Resources\user %283%29.png" />
     <None Include="Resources\Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__10_-removebg-preview.png" />
+    <None Include="Resources\nova_logo-removebg-preview.png" />
+    <None Include="Resources\Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__11_-removebg-preview1.png" />
+    <None Include="Resources\Live Stream Live Stream Live Stream REVERTON PRADO %2811%29.png" />
+    <None Include="Resources\padlock %281%291.png" />
+    <None Include="Resources\Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__10_-removebg-preview1.png" />
+    <None Include="Resources\Live Stream Live Stream Live Stream REVERTON PRADO %2810%29.png" />
+    <None Include="Resources\Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__9_-removebg-preview %281%291.png" />
+    <None Include="Resources\Live_Stream_Live_Stream_Live_Stream_REVERTON_PRADO__9_-removebg-preview1.png" />
+    <None Include="Resources\Live Stream Live Stream Live Stream REVERTON PRADO %289%29.png" />
+    <None Include="Resources\Live Stream Live Stream Live Stream REVERTON PRADO %288%29.png" />
+    <None Include="Resources\Live Stream Live Stream Live Stream REVERTON PRADO %287%29.png" />
+    <None Include="Resources\switch %281%291.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\lock1.png" />
+    <None Include="Resources\Captura_de_tela_2023-09-11_213254-removebg-preview.png" />
+    <None Include="Resources\Captura_de_tela_2023-09-11_213254-removebg-preview %281%29.png" />
     <Content Include="Resources\switch %282%29.png" />
     <None Include="Resources\visibility.png" />
     <None Include="Resources\switch %282%291.png" />
