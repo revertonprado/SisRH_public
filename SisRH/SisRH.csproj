@@ -62,6 +62,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas exemplo\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas exemplo\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -206,6 +215,8 @@
     <None Include="Resources\power-on.png" />
     <None Include="Resources\power-on %283%29.png" />
     <None Include="Resources\power-on %282%29.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\setting.png" />
     <Content Include="Resources\switch %282%29.png" />
     <None Include="Resources\visibility.png" />
     <None Include="Resources\switch %282%291.png" />
