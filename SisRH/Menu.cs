@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SisRH.Properties;
 
 namespace SisRH
 {
@@ -15,6 +16,21 @@ namespace SisRH
         public Menu()
         {
             InitializeComponent();
+        }
+
+        private void Fechar(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void picOn_MouseEnter(object sender, EventArgs e)
+        {
+            pcOn.Image = Resources.power_on__2_;
+
+        }
+        private void picOn_MouseLeave(object sender, EventArgs e)
+        {
+            pcOn.Image = Resources.power_on__3_;
+
         }
 
         private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)

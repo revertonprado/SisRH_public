@@ -55,7 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Transform.cs" />
+    <Compile Include="Classes\Conexao.cs" />
+    <Compile Include="Classes\SessaoAtual.cs" />
+    <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

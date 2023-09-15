@@ -9,13 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SisRH.Properties;
+using System.Data.SqlClient;
 
 namespace SisRH
 {
     public partial class Login : Form
     {
-        Transform transform = new Transform();
-
+        Classes.Usuario u = new Classes.Usuario();
+        
         public Login()
         {
             InitializeComponent();
@@ -26,9 +27,38 @@ namespace SisRH
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Logar(object sender, EventArgs e)
         {
+            
+            u.Usu1 = txtUsuario.Text;
+            u.Senha1 = txtSenha.Text;
+            if (u.Logar() == true)
+            {
+                
+                SisRH.Menu m = new SisRH.Menu();
+                m.label13.Text = txtUsuario.Text;
+                Hide();
+                m.Show();
+                
 
+            }
+            else
+            {
+                panel1.BackColor = Color.Red;
+                panel2.BackColor = Color.Red;
+                panel3.BackColor = Color.Red;
+                panel4.BackColor = Color.Red;
+                panel5.BackColor = Color.Red;
+                panel6.BackColor = Color.Red;
+                MessageBox.Show("Usuario ou Senha Invalido(s)");
+                panel1.BackColor = Color.FromArgb(28, 218, 255);
+                panel2.BackColor = Color.FromArgb(28, 218, 255);
+                panel3.BackColor = Color.FromArgb(28, 218, 255);
+                panel4.BackColor = Color.FromArgb(28, 218, 255);
+                panel5.BackColor = Color.FromArgb(28, 218, 255);
+                panel6.BackColor = Color.FromArgb(28, 218, 255);
+            }
+            
         }
 
         private void picOlho_MouseEnter(object sender, EventArgs e)
