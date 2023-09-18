@@ -55,7 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Bancos.cs" />
+    <Compile Include="Classes\Cargo.cs" />
     <Compile Include="Classes\Conexao.cs" />
+    <Compile Include="Classes\EstadoCivil.cs" />
+    <Compile Include="Classes\Funcionario.cs" />
     <Compile Include="Classes\SessaoAtual.cs" />
     <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Login.cs">

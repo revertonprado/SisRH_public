@@ -118,7 +118,7 @@
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsuario.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtUsuario.Location = new System.Drawing.Point(74, 163);
+            this.txtUsuario.Location = new System.Drawing.Point(72, 167);
             this.txtUsuario.MaxLength = 20;
             this.txtUsuario.Multiline = true;
             this.txtUsuario.Name = "txtUsuario";
