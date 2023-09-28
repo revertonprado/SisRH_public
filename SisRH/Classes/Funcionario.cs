@@ -51,9 +51,24 @@ namespace SisRH.Classes
         public string PrimeroNome_Func1 { get => PrimeroNome_Func; set => PrimeroNome_Func = value; }
         public string NomeConjunge_func1 { get => NomeConjunge_func; set => NomeConjunge_func = value; }
 
-        
+        public DataSet ListarBancos()
+        {
+            try
+            {
+                //instrucaoSql = "SELECT * FROM CLIENTE WHERE COD_CLI='" + _CodCli;
+                instrucaoSql = "select * from tbBancos";
 
-       
+                return c.RetornarDataSet(instrucaoSql);
+            }
+
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+
 
 
 

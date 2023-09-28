@@ -35,7 +35,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -46,8 +45,12 @@
             this.btnLogar = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.panel56 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.ddlNac = new System.Windows.Forms.ComboBox();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.ddlUF = new System.Windows.Forms.ComboBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
@@ -60,9 +63,9 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.cmbEc = new System.Windows.Forms.ComboBox();
-            this.cmbCor = new System.Windows.Forms.ComboBox();
+            this.ddlTs = new System.Windows.Forms.ComboBox();
+            this.ddlEc = new System.Windows.Forms.ComboBox();
+            this.ddlCor = new System.Windows.Forms.ComboBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -82,12 +85,11 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.cmbSexo = new System.Windows.Forms.ComboBox();
+            this.ddlSexo = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.txtUltimoNome = new System.Windows.Forms.TextBox();
+            this.txtSobrenome = new System.Windows.Forms.TextBox();
+            this.txtPriNome = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -95,7 +97,7 @@
             this.panel31 = new System.Windows.Forms.Panel();
             this.panel30 = new System.Windows.Forms.Panel();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ddlTipoMorad = new System.Windows.Forms.ComboBox();
             this.panel28 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
             this.panel26 = new System.Windows.Forms.Panel();
@@ -110,7 +112,7 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.ddlUF2 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -136,20 +138,57 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.cmbBanco = new System.Windows.Forms.ComboBox();
+            this.ddlBanco = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.panel41 = new System.Windows.Forms.Panel();
             this.panel40 = new System.Windows.Forms.Panel();
             this.panel38 = new System.Windows.Forms.Panel();
             this.panel37 = new System.Windows.Forms.Panel();
-            this.cmbDepart = new System.Windows.Forms.ComboBox();
+            this.ddlDepart = new System.Windows.Forms.ComboBox();
             this.label31 = new System.Windows.Forms.Label();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.txtSalario = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.cmbCargo = new System.Windows.Forms.ComboBox();
+            this.ddlCargo = new System.Windows.Forms.ComboBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.panel55 = new System.Windows.Forms.Panel();
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.ddlComprRes = new System.Windows.Forms.ComboBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.panel52 = new System.Windows.Forms.Panel();
+            this.ddlEscolaridade = new System.Windows.Forms.ComboBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.panel51 = new System.Windows.Forms.Panel();
+            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel50 = new System.Windows.Forms.Panel();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.panel48 = new System.Windows.Forms.Panel();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.panel47 = new System.Windows.Forms.Panel();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.panel45 = new System.Windows.Forms.Panel();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -161,6 +200,7 @@
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -218,7 +258,6 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.panel7.Controls.Add(this.button6);
             this.panel7.Controls.Add(this.button5);
             this.panel7.Controls.Add(this.button1);
             this.panel7.Controls.Add(this.button3);
@@ -228,21 +267,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 725);
             this.panel7.TabIndex = 18;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.button6.Location = new System.Drawing.Point(10, 341);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(184, 55);
-            this.button6.TabIndex = 33;
-            this.button6.Text = "Usuario e Senha de rede";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -256,7 +280,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(184, 55);
             this.button5.TabIndex = 32;
-            this.button5.Text = "Dados Pessoais";
+            this.button5.Text = "Cadastrar Funcionario";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -307,7 +331,7 @@
             this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.panel8.Location = new System.Drawing.Point(202, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1060, 97);
+            this.panel8.Size = new System.Drawing.Size(1060, 39);
             this.panel8.TabIndex = 19;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
@@ -316,7 +340,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(7, 38);
+            this.label1.Location = new System.Drawing.Point(5, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(243, 23);
             this.label1.TabIndex = 0;
@@ -366,8 +390,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.panel56);
+            this.groupBox1.Controls.Add(this.label46);
+            this.groupBox1.Controls.Add(this.ddlNac);
             this.groupBox1.Controls.Add(this.panel43);
-            this.groupBox1.Controls.Add(this.comboBox9);
+            this.groupBox1.Controls.Add(this.ddlUF);
             this.groupBox1.Controls.Add(this.panel24);
             this.groupBox1.Controls.Add(this.panel23);
             this.groupBox1.Controls.Add(this.panel22);
@@ -379,9 +407,9 @@
             this.groupBox1.Controls.Add(this.panel15);
             this.groupBox1.Controls.Add(this.panel14);
             this.groupBox1.Controls.Add(this.panel13);
-            this.groupBox1.Controls.Add(this.comboBox10);
-            this.groupBox1.Controls.Add(this.cmbEc);
-            this.groupBox1.Controls.Add(this.cmbCor);
+            this.groupBox1.Controls.Add(this.ddlTs);
+            this.groupBox1.Controls.Add(this.ddlEc);
+            this.groupBox1.Controls.Add(this.ddlCor);
             this.groupBox1.Controls.Add(this.panel12);
             this.groupBox1.Controls.Add(this.panel11);
             this.groupBox1.Controls.Add(this.panel10);
@@ -401,12 +429,11 @@
             this.groupBox1.Controls.Add(this.textBox14);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.cmbSexo);
+            this.groupBox1.Controls.Add(this.ddlSexo);
             this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.textBox15);
-            this.groupBox1.Controls.Add(this.textBox16);
-            this.groupBox1.Controls.Add(this.textBox17);
-            this.groupBox1.Controls.Add(this.textBox18);
+            this.groupBox1.Controls.Add(this.txtUltimoNome);
+            this.groupBox1.Controls.Add(this.txtSobrenome);
+            this.groupBox1.Controls.Add(this.txtPriNome);
             this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Controls.Add(this.label26);
             this.groupBox1.Controls.Add(this.label27);
@@ -414,7 +441,7 @@
             this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.btnLogar);
             this.groupBox1.ForeColor = System.Drawing.Color.Snow;
-            this.groupBox1.Location = new System.Drawing.Point(211, 105);
+            this.groupBox1.Location = new System.Drawing.Point(211, 47);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1041, 248);
             this.groupBox1.TabIndex = 57;
@@ -422,27 +449,72 @@
             this.groupBox1.Text = "Dados Pessoais";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.maskedTextBox1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.maskedTextBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.maskedTextBox1.Location = new System.Drawing.Point(16, 132);
+            this.maskedTextBox1.Mask = "00/00/0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(101, 16);
+            this.maskedTextBox1.TabIndex = 111;
+            // 
+            // panel56
+            // 
+            this.panel56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel56.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel56.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel56.Location = new System.Drawing.Point(144, 149);
+            this.panel56.Name = "panel56";
+            this.panel56.Size = new System.Drawing.Size(132, 1);
+            this.panel56.TabIndex = 107;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label46.Location = new System.Drawing.Point(143, 107);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(109, 16);
+            this.label46.TabIndex = 106;
+            this.label46.Text = "Nacionalidade";
+            // 
+            // ddlNac
+            // 
+            this.ddlNac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlNac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlNac.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlNac.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlNac.FormattingEnabled = true;
+            this.ddlNac.Location = new System.Drawing.Point(144, 126);
+            this.ddlNac.Name = "ddlNac";
+            this.ddlNac.Size = new System.Drawing.Size(132, 24);
+            this.ddlNac.TabIndex = 105;
+            // 
             // panel43
             // 
             this.panel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel43.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel43.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel43.Location = new System.Drawing.Point(489, 150);
+            this.panel43.Location = new System.Drawing.Point(482, 144);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(68, 1);
             this.panel43.TabIndex = 104;
             // 
-            // comboBox9
+            // ddlUF
             // 
-            this.comboBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.comboBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox9.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox9.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(489, 127);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(68, 24);
-            this.comboBox9.TabIndex = 103;
+            this.ddlUF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlUF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlUF.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlUF.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlUF.FormattingEnabled = true;
+            this.ddlUF.Location = new System.Drawing.Point(482, 121);
+            this.ddlUF.Name = "ddlUF";
+            this.ddlUF.Size = new System.Drawing.Size(68, 24);
+            this.ddlUF.TabIndex = 103;
             // 
             // panel24
             // 
@@ -508,7 +580,7 @@
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel18.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel18.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel18.Location = new System.Drawing.Point(748, 151);
+            this.panel18.Location = new System.Drawing.Point(748, 145);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(120, 1);
             this.panel18.TabIndex = 98;
@@ -518,7 +590,7 @@
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel17.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel17.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel17.Location = new System.Drawing.Point(659, 151);
+            this.panel17.Location = new System.Drawing.Point(659, 145);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(78, 1);
             this.panel17.TabIndex = 97;
@@ -528,7 +600,7 @@
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel16.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel16.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel16.Location = new System.Drawing.Point(563, 151);
+            this.panel16.Location = new System.Drawing.Point(560, 145);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(90, 1);
             this.panel16.TabIndex = 96;
@@ -538,7 +610,7 @@
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel15.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel15.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel15.Location = new System.Drawing.Point(489, 148);
+            this.panel15.Location = new System.Drawing.Point(482, 142);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(68, 1);
             this.panel15.TabIndex = 95;
@@ -548,9 +620,9 @@
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel14.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel14.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel14.Location = new System.Drawing.Point(255, 148);
+            this.panel14.Location = new System.Drawing.Point(299, 148);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(223, 1);
+            this.panel14.Size = new System.Drawing.Size(166, 1);
             this.panel14.TabIndex = 94;
             // 
             // panel13
@@ -560,44 +632,44 @@
             this.panel13.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.panel13.Location = new System.Drawing.Point(17, 148);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(223, 1);
+            this.panel13.Size = new System.Drawing.Size(101, 1);
             this.panel13.TabIndex = 93;
             // 
-            // comboBox10
+            // ddlTs
             // 
-            this.comboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.comboBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox10.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(748, 128);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(119, 24);
-            this.comboBox10.TabIndex = 92;
+            this.ddlTs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlTs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlTs.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlTs.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlTs.FormattingEnabled = true;
+            this.ddlTs.Location = new System.Drawing.Point(748, 122);
+            this.ddlTs.Name = "ddlTs";
+            this.ddlTs.Size = new System.Drawing.Size(119, 24);
+            this.ddlTs.TabIndex = 92;
             // 
-            // cmbEc
+            // ddlEc
             // 
-            this.cmbEc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.cmbEc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbEc.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbEc.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.cmbEc.FormattingEnabled = true;
-            this.cmbEc.Location = new System.Drawing.Point(490, 183);
-            this.cmbEc.Name = "cmbEc";
-            this.cmbEc.Size = new System.Drawing.Size(147, 24);
-            this.cmbEc.TabIndex = 91;
+            this.ddlEc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlEc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlEc.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlEc.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlEc.FormattingEnabled = true;
+            this.ddlEc.Location = new System.Drawing.Point(490, 183);
+            this.ddlEc.Name = "ddlEc";
+            this.ddlEc.Size = new System.Drawing.Size(147, 24);
+            this.ddlEc.TabIndex = 91;
             // 
-            // cmbCor
+            // ddlCor
             // 
-            this.cmbCor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.cmbCor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbCor.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCor.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.cmbCor.FormattingEnabled = true;
-            this.cmbCor.Location = new System.Drawing.Point(659, 128);
-            this.cmbCor.Name = "cmbCor";
-            this.cmbCor.Size = new System.Drawing.Size(78, 24);
-            this.cmbCor.TabIndex = 90;
+            this.ddlCor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlCor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlCor.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlCor.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlCor.FormattingEnabled = true;
+            this.ddlCor.Location = new System.Drawing.Point(659, 122);
+            this.ddlCor.Name = "ddlCor";
+            this.ddlCor.Size = new System.Drawing.Size(78, 24);
+            this.ddlCor.TabIndex = 90;
             // 
             // panel12
             // 
@@ -644,7 +716,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label6.Location = new System.Drawing.Point(744, 110);
+            this.label6.Location = new System.Drawing.Point(744, 104);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(117, 16);
             this.label6.TabIndex = 84;
@@ -758,7 +830,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label20.Location = new System.Drawing.Point(487, 111);
+            this.label20.Location = new System.Drawing.Point(480, 105);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(26, 16);
             this.label20.TabIndex = 72;
@@ -769,7 +841,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label21.Location = new System.Drawing.Point(251, 112);
+            this.label21.Location = new System.Drawing.Point(299, 108);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(147, 16);
             this.label21.TabIndex = 70;
@@ -781,10 +853,10 @@
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox14.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox14.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox14.Location = new System.Drawing.Point(254, 128);
+            this.textBox14.Location = new System.Drawing.Point(299, 125);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(224, 20);
+            this.textBox14.Size = new System.Drawing.Size(166, 20);
             this.textBox14.TabIndex = 69;
             // 
             // label22
@@ -792,7 +864,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label22.Location = new System.Drawing.Point(656, 109);
+            this.label22.Location = new System.Drawing.Point(656, 103);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(32, 16);
             this.label22.TabIndex = 68;
@@ -803,82 +875,70 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label23.Location = new System.Drawing.Point(559, 110);
+            this.label23.Location = new System.Drawing.Point(556, 104);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(43, 16);
             this.label23.TabIndex = 66;
             this.label23.Text = "Sexo";
             // 
-            // cmbSexo
+            // ddlSexo
             // 
-            this.cmbSexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.cmbSexo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbSexo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSexo.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.cmbSexo.FormattingEnabled = true;
-            this.cmbSexo.Location = new System.Drawing.Point(562, 128);
-            this.cmbSexo.Name = "cmbSexo";
-            this.cmbSexo.Size = new System.Drawing.Size(91, 24);
-            this.cmbSexo.TabIndex = 65;
+            this.ddlSexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlSexo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlSexo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlSexo.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlSexo.FormattingEnabled = true;
+            this.ddlSexo.Location = new System.Drawing.Point(559, 122);
+            this.ddlSexo.Name = "ddlSexo";
+            this.ddlSexo.Size = new System.Drawing.Size(91, 24);
+            this.ddlSexo.TabIndex = 65;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label24.Location = new System.Drawing.Point(12, 112);
+            this.label24.Location = new System.Drawing.Point(12, 108);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(131, 16);
+            this.label24.Size = new System.Drawing.Size(80, 16);
             this.label24.TabIndex = 64;
-            this.label24.Text = "Data Nascimento";
+            this.label24.Text = "Data Nasc";
             // 
-            // textBox15
+            // txtUltimoNome
             // 
-            this.textBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox15.Location = new System.Drawing.Point(15, 128);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(224, 20);
-            this.textBox15.TabIndex = 63;
+            this.txtUltimoNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtUltimoNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUltimoNome.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUltimoNome.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtUltimoNome.Location = new System.Drawing.Point(499, 60);
+            this.txtUltimoNome.Multiline = true;
+            this.txtUltimoNome.Name = "txtUltimoNome";
+            this.txtUltimoNome.Size = new System.Drawing.Size(239, 20);
+            this.txtUltimoNome.TabIndex = 62;
             // 
-            // textBox16
+            // txtSobrenome
             // 
-            this.textBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox16.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox16.Location = new System.Drawing.Point(499, 60);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(239, 20);
-            this.textBox16.TabIndex = 62;
+            this.txtSobrenome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtSobrenome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSobrenome.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSobrenome.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtSobrenome.Location = new System.Drawing.Point(254, 60);
+            this.txtSobrenome.Multiline = true;
+            this.txtSobrenome.Name = "txtSobrenome";
+            this.txtSobrenome.Size = new System.Drawing.Size(233, 20);
+            this.txtSobrenome.TabIndex = 61;
             // 
-            // textBox17
+            // txtPriNome
             // 
-            this.textBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox17.Location = new System.Drawing.Point(254, 60);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(233, 20);
-            this.textBox17.TabIndex = 61;
-            // 
-            // textBox18
-            // 
-            this.textBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox18.Location = new System.Drawing.Point(15, 60);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(224, 20);
-            this.textBox18.TabIndex = 60;
+            this.txtPriNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtPriNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPriNome.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPriNome.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtPriNome.Location = new System.Drawing.Point(15, 60);
+            this.txtPriNome.Multiline = true;
+            this.txtPriNome.Name = "txtPriNome";
+            this.txtPriNome.Size = new System.Drawing.Size(224, 20);
+            this.txtPriNome.TabIndex = 60;
             // 
             // label25
             // 
@@ -918,7 +978,7 @@
             this.groupBox2.Controls.Add(this.panel31);
             this.groupBox2.Controls.Add(this.panel30);
             this.groupBox2.Controls.Add(this.panel29);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.ddlTipoMorad);
             this.groupBox2.Controls.Add(this.panel28);
             this.groupBox2.Controls.Add(this.panel27);
             this.groupBox2.Controls.Add(this.panel26);
@@ -933,11 +993,11 @@
             this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.textBox9);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.comboBox6);
+            this.groupBox2.Controls.Add(this.ddlUF2);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.ForeColor = System.Drawing.Color.Snow;
-            this.groupBox2.Location = new System.Drawing.Point(213, 359);
+            this.groupBox2.Location = new System.Drawing.Point(211, 301);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1041, 87);
             this.groupBox2.TabIndex = 58;
@@ -972,17 +1032,17 @@
             this.panel29.Size = new System.Drawing.Size(80, 1);
             this.panel29.TabIndex = 108;
             // 
-            // comboBox1
+            // ddlTipoMorad
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(903, 47);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(132, 24);
-            this.comboBox1.TabIndex = 107;
+            this.ddlTipoMorad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlTipoMorad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlTipoMorad.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlTipoMorad.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlTipoMorad.FormattingEnabled = true;
+            this.ddlTipoMorad.Location = new System.Drawing.Point(903, 47);
+            this.ddlTipoMorad.Name = "ddlTipoMorad";
+            this.ddlTipoMorad.Size = new System.Drawing.Size(132, 24);
+            this.ddlTipoMorad.TabIndex = 107;
             // 
             // panel28
             // 
@@ -1135,17 +1195,17 @@
             this.label12.TabIndex = 59;
             this.label12.Text = "Número";
             // 
-            // comboBox6
+            // ddlUF2
             // 
-            this.comboBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox6.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(648, 47);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(80, 24);
-            this.comboBox6.TabIndex = 89;
+            this.ddlUF2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlUF2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlUF2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlUF2.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlUF2.FormattingEnabled = true;
+            this.ddlUF2.Location = new System.Drawing.Point(648, 47);
+            this.ddlUF2.Name = "ddlUF2";
+            this.ddlUF2.Size = new System.Drawing.Size(80, 24);
+            this.ddlUF2.TabIndex = 89;
             // 
             // label13
             // 
@@ -1185,7 +1245,7 @@
             this.groupBox3.Controls.Add(this.label28);
             this.groupBox3.Controls.Add(this.label29);
             this.groupBox3.ForeColor = System.Drawing.Color.Snow;
-            this.groupBox3.Location = new System.Drawing.Point(213, 462);
+            this.groupBox3.Location = new System.Drawing.Point(211, 394);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1041, 87);
             this.groupBox3.TabIndex = 59;
@@ -1344,40 +1404,41 @@
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.textBox4);
             this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.cmbBanco);
+            this.groupBox4.Controls.Add(this.ddlBanco);
             this.groupBox4.ForeColor = System.Drawing.Color.Snow;
-            this.groupBox4.Location = new System.Drawing.Point(215, 565);
+            this.groupBox4.Location = new System.Drawing.Point(211, 487);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(460, 87);
             this.groupBox4.TabIndex = 60;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Informações Bancarias";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // panel39
             // 
             this.panel39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel39.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel39.Location = new System.Drawing.Point(15, 69);
+            this.panel39.Location = new System.Drawing.Point(15, 68);
             this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(132, 1);
+            this.panel39.Size = new System.Drawing.Size(193, 1);
             this.panel39.TabIndex = 93;
             // 
             // panel36
             // 
             this.panel36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel36.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel36.Location = new System.Drawing.Point(312, 66);
+            this.panel36.Location = new System.Drawing.Point(363, 70);
             this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(133, 1);
+            this.panel36.Size = new System.Drawing.Size(83, 1);
             this.panel36.TabIndex = 94;
             // 
             // panel35
             // 
             this.panel35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel35.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel35.Location = new System.Drawing.Point(164, 65);
+            this.panel35.Location = new System.Drawing.Point(225, 69);
             this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(133, 1);
+            this.panel35.Size = new System.Drawing.Size(123, 1);
             this.panel35.TabIndex = 93;
             // 
             // label10
@@ -1385,11 +1446,11 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(309, 30);
+            this.label10.Location = new System.Drawing.Point(359, 34);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(133, 16);
+            this.label10.Size = new System.Drawing.Size(87, 16);
             this.label10.TabIndex = 92;
-            this.label10.Text = "Número da Conta";
+            this.label10.Text = "Num Conta";
             // 
             // textBox20
             // 
@@ -1397,10 +1458,10 @@
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox20.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox20.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox20.Location = new System.Drawing.Point(312, 46);
+            this.textBox20.Location = new System.Drawing.Point(363, 49);
             this.textBox20.Multiline = true;
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(134, 20);
+            this.textBox20.Size = new System.Drawing.Size(83, 20);
             this.textBox20.TabIndex = 91;
             // 
             // label9
@@ -1408,7 +1469,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(160, 30);
+            this.label9.Location = new System.Drawing.Point(222, 34);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(126, 16);
             this.label9.TabIndex = 90;
@@ -1420,10 +1481,10 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox4.Location = new System.Drawing.Point(163, 46);
+            this.textBox4.Location = new System.Drawing.Point(225, 50);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(134, 20);
+            this.textBox4.Size = new System.Drawing.Size(123, 20);
             this.textBox4.TabIndex = 89;
             // 
             // label8
@@ -1431,23 +1492,23 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(12, 30);
+            this.label8.Location = new System.Drawing.Point(12, 32);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 16);
             this.label8.TabIndex = 73;
             this.label8.Text = "Banco";
             // 
-            // cmbBanco
+            // ddlBanco
             // 
-            this.cmbBanco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.cmbBanco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbBanco.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbBanco.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.cmbBanco.FormattingEnabled = true;
-            this.cmbBanco.Location = new System.Drawing.Point(15, 46);
-            this.cmbBanco.Name = "cmbBanco";
-            this.cmbBanco.Size = new System.Drawing.Size(132, 24);
-            this.cmbBanco.TabIndex = 66;
+            this.ddlBanco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlBanco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlBanco.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlBanco.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlBanco.FormattingEnabled = true;
+            this.ddlBanco.Location = new System.Drawing.Point(15, 48);
+            this.ddlBanco.Name = "ddlBanco";
+            this.ddlBanco.Size = new System.Drawing.Size(193, 21);
+            this.ddlBanco.TabIndex = 66;
             // 
             // groupBox5
             // 
@@ -1455,18 +1516,18 @@
             this.groupBox5.Controls.Add(this.panel40);
             this.groupBox5.Controls.Add(this.panel38);
             this.groupBox5.Controls.Add(this.panel37);
-            this.groupBox5.Controls.Add(this.cmbDepart);
+            this.groupBox5.Controls.Add(this.ddlDepart);
             this.groupBox5.Controls.Add(this.label31);
             this.groupBox5.Controls.Add(this.textBox22);
             this.groupBox5.Controls.Add(this.label32);
             this.groupBox5.Controls.Add(this.label33);
-            this.groupBox5.Controls.Add(this.textBox24);
+            this.groupBox5.Controls.Add(this.txtSalario);
             this.groupBox5.Controls.Add(this.label34);
-            this.groupBox5.Controls.Add(this.cmbCargo);
+            this.groupBox5.Controls.Add(this.ddlCargo);
             this.groupBox5.ForeColor = System.Drawing.Color.Snow;
-            this.groupBox5.Location = new System.Drawing.Point(681, 565);
+            this.groupBox5.Location = new System.Drawing.Point(681, 487);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(575, 87);
+            this.groupBox5.Size = new System.Drawing.Size(571, 87);
             this.groupBox5.TabIndex = 61;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Cargo";
@@ -1475,7 +1536,7 @@
             // 
             this.panel41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel41.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel41.Location = new System.Drawing.Point(293, 69);
+            this.panel41.Location = new System.Drawing.Point(288, 69);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(131, 1);
             this.panel41.TabIndex = 93;
@@ -1484,7 +1545,7 @@
             // 
             this.panel40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel40.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel40.Location = new System.Drawing.Point(15, 69);
+            this.panel40.Location = new System.Drawing.Point(10, 67);
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(132, 1);
             this.panel40.TabIndex = 93;
@@ -1493,7 +1554,7 @@
             // 
             this.panel38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel38.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel38.Location = new System.Drawing.Point(435, 66);
+            this.panel38.Location = new System.Drawing.Point(430, 66);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(136, 1);
             this.panel38.TabIndex = 97;
@@ -1502,29 +1563,29 @@
             // 
             this.panel37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel37.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel37.Location = new System.Drawing.Point(157, 66);
+            this.panel37.Location = new System.Drawing.Point(152, 66);
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(124, 1);
             this.panel37.TabIndex = 96;
             // 
-            // cmbDepart
+            // ddlDepart
             // 
-            this.cmbDepart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.cmbDepart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbDepart.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbDepart.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.cmbDepart.FormattingEnabled = true;
-            this.cmbDepart.Location = new System.Drawing.Point(293, 46);
-            this.cmbDepart.Name = "cmbDepart";
-            this.cmbDepart.Size = new System.Drawing.Size(131, 24);
-            this.cmbDepart.TabIndex = 95;
+            this.ddlDepart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlDepart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlDepart.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlDepart.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlDepart.FormattingEnabled = true;
+            this.ddlDepart.Location = new System.Drawing.Point(288, 46);
+            this.ddlDepart.Name = "ddlDepart";
+            this.ddlDepart.Size = new System.Drawing.Size(131, 24);
+            this.ddlDepart.TabIndex = 95;
             // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label31.Location = new System.Drawing.Point(432, 30);
+            this.label31.Location = new System.Drawing.Point(427, 30);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(49, 16);
             this.label31.TabIndex = 94;
@@ -1536,7 +1597,7 @@
             this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox22.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox22.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox22.Location = new System.Drawing.Point(435, 46);
+            this.textBox22.Location = new System.Drawing.Point(430, 46);
             this.textBox22.Multiline = true;
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(136, 20);
@@ -1548,7 +1609,7 @@
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label32.Location = new System.Drawing.Point(290, 30);
+            this.label32.Location = new System.Drawing.Point(285, 30);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(112, 16);
             this.label32.TabIndex = 92;
@@ -1559,46 +1620,490 @@
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label33.Location = new System.Drawing.Point(154, 30);
+            this.label33.Location = new System.Drawing.Point(149, 30);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(57, 16);
             this.label33.TabIndex = 90;
             this.label33.Text = "Salario";
             // 
-            // textBox24
+            // txtSalario
             // 
-            this.textBox24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox24.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox24.Location = new System.Drawing.Point(157, 46);
-            this.textBox24.Multiline = true;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(124, 20);
-            this.textBox24.TabIndex = 89;
+            this.txtSalario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtSalario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSalario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalario.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtSalario.Location = new System.Drawing.Point(152, 46);
+            this.txtSalario.Multiline = true;
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(124, 20);
+            this.txtSalario.TabIndex = 89;
             // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label34.Location = new System.Drawing.Point(12, 30);
+            this.label34.Location = new System.Drawing.Point(7, 28);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(50, 16);
             this.label34.TabIndex = 73;
             this.label34.Text = "Cargo";
             // 
-            // cmbCargo
+            // ddlCargo
             // 
-            this.cmbCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.cmbCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbCargo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCargo.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.cmbCargo.FormattingEnabled = true;
-            this.cmbCargo.Location = new System.Drawing.Point(15, 46);
-            this.cmbCargo.Name = "cmbCargo";
-            this.cmbCargo.Size = new System.Drawing.Size(132, 24);
-            this.cmbCargo.TabIndex = 66;
+            this.ddlCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlCargo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlCargo.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlCargo.FormattingEnabled = true;
+            this.ddlCargo.Location = new System.Drawing.Point(10, 44);
+            this.ddlCargo.Name = "ddlCargo";
+            this.ddlCargo.Size = new System.Drawing.Size(132, 24);
+            this.ddlCargo.TabIndex = 66;
+            this.ddlCargo.SelectedIndexChanged += new System.EventHandler(this.ddlCargo_SelectedIndexChanged);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.panel55);
+            this.groupBox6.Controls.Add(this.panel54);
+            this.groupBox6.Controls.Add(this.textBox30);
+            this.groupBox6.Controls.Add(this.label45);
+            this.groupBox6.Controls.Add(this.ddlComprRes);
+            this.groupBox6.Controls.Add(this.label44);
+            this.groupBox6.Controls.Add(this.panel52);
+            this.groupBox6.Controls.Add(this.ddlEscolaridade);
+            this.groupBox6.Controls.Add(this.label42);
+            this.groupBox6.Controls.Add(this.panel53);
+            this.groupBox6.Controls.Add(this.textBox31);
+            this.groupBox6.Controls.Add(this.label43);
+            this.groupBox6.Controls.Add(this.panel51);
+            this.groupBox6.Controls.Add(this.textBox29);
+            this.groupBox6.Controls.Add(this.label41);
+            this.groupBox6.Controls.Add(this.panel50);
+            this.groupBox6.Controls.Add(this.textBox28);
+            this.groupBox6.Controls.Add(this.label40);
+            this.groupBox6.Controls.Add(this.panel49);
+            this.groupBox6.Controls.Add(this.textBox27);
+            this.groupBox6.Controls.Add(this.label39);
+            this.groupBox6.Controls.Add(this.panel48);
+            this.groupBox6.Controls.Add(this.textBox26);
+            this.groupBox6.Controls.Add(this.label38);
+            this.groupBox6.Controls.Add(this.panel47);
+            this.groupBox6.Controls.Add(this.textBox25);
+            this.groupBox6.Controls.Add(this.label37);
+            this.groupBox6.Controls.Add(this.panel44);
+            this.groupBox6.Controls.Add(this.panel45);
+            this.groupBox6.Controls.Add(this.panel46);
+            this.groupBox6.Controls.Add(this.textBox10);
+            this.groupBox6.Controls.Add(this.textBox21);
+            this.groupBox6.Controls.Add(this.textBox23);
+            this.groupBox6.Controls.Add(this.label30);
+            this.groupBox6.Controls.Add(this.label35);
+            this.groupBox6.Controls.Add(this.label36);
+            this.groupBox6.ForeColor = System.Drawing.Color.Snow;
+            this.groupBox6.Location = new System.Drawing.Point(211, 580);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(1041, 137);
+            this.groupBox6.TabIndex = 62;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Informações Bancarias";
+            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
+            // 
+            // panel55
+            // 
+            this.panel55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel55.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel55.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel55.Location = new System.Drawing.Point(439, 121);
+            this.panel55.Name = "panel55";
+            this.panel55.Size = new System.Drawing.Size(200, 1);
+            this.panel55.TabIndex = 125;
+            // 
+            // panel54
+            // 
+            this.panel54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel54.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel54.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel54.Location = new System.Drawing.Point(658, 120);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(155, 1);
+            this.panel54.TabIndex = 124;
+            // 
+            // textBox30
+            // 
+            this.textBox30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox30.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox30.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox30.Location = new System.Drawing.Point(657, 101);
+            this.textBox30.Multiline = true;
+            this.textBox30.Name = "textBox30";
+            this.textBox30.Size = new System.Drawing.Size(155, 20);
+            this.textBox30.TabIndex = 123;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label45.Location = new System.Drawing.Point(654, 85);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(84, 16);
+            this.label45.TabIndex = 122;
+            this.label45.Text = "Reservista";
+            // 
+            // ddlComprRes
+            // 
+            this.ddlComprRes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlComprRes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlComprRes.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlComprRes.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlComprRes.FormattingEnabled = true;
+            this.ddlComprRes.Location = new System.Drawing.Point(439, 98);
+            this.ddlComprRes.Name = "ddlComprRes";
+            this.ddlComprRes.Size = new System.Drawing.Size(199, 24);
+            this.ddlComprRes.TabIndex = 119;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label44.Location = new System.Drawing.Point(435, 80);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(160, 16);
+            this.label44.TabIndex = 118;
+            this.label44.Text = "Comprov. Residência";
+            // 
+            // panel52
+            // 
+            this.panel52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel52.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel52.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel52.Location = new System.Drawing.Point(17, 121);
+            this.panel52.Name = "panel52";
+            this.panel52.Size = new System.Drawing.Size(199, 1);
+            this.panel52.TabIndex = 101;
+            // 
+            // ddlEscolaridade
+            // 
+            this.ddlEscolaridade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlEscolaridade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlEscolaridade.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlEscolaridade.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlEscolaridade.FormattingEnabled = true;
+            this.ddlEscolaridade.Location = new System.Drawing.Point(17, 98);
+            this.ddlEscolaridade.Name = "ddlEscolaridade";
+            this.ddlEscolaridade.Size = new System.Drawing.Size(199, 24);
+            this.ddlEscolaridade.TabIndex = 100;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label42.Location = new System.Drawing.Point(13, 80);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(100, 16);
+            this.label42.TabIndex = 99;
+            this.label42.Text = "Escolaridade";
+            // 
+            // panel53
+            // 
+            this.panel53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel53.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel53.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel53.Location = new System.Drawing.Point(240, 120);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(182, 1);
+            this.panel53.TabIndex = 117;
+            // 
+            // textBox31
+            // 
+            this.textBox31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox31.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox31.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox31.Location = new System.Drawing.Point(239, 101);
+            this.textBox31.Multiline = true;
+            this.textBox31.Name = "textBox31";
+            this.textBox31.Size = new System.Drawing.Size(182, 20);
+            this.textBox31.TabIndex = 116;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label43.Location = new System.Drawing.Point(236, 85);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(36, 16);
+            this.label43.TabIndex = 115;
+            this.label43.Text = "CNS";
+            // 
+            // panel51
+            // 
+            this.panel51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel51.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel51.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel51.Location = new System.Drawing.Point(929, 65);
+            this.panel51.Name = "panel51";
+            this.panel51.Size = new System.Drawing.Size(107, 1);
+            this.panel51.TabIndex = 111;
+            // 
+            // textBox29
+            // 
+            this.textBox29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox29.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox29.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox29.Location = new System.Drawing.Point(929, 46);
+            this.textBox29.Multiline = true;
+            this.textBox29.Name = "textBox29";
+            this.textBox29.Size = new System.Drawing.Size(107, 20);
+            this.textBox29.TabIndex = 110;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label41.Location = new System.Drawing.Point(926, 27);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(95, 16);
+            this.label41.TabIndex = 109;
+            this.label41.Text = "Cidade Voto";
+            // 
+            // panel50
+            // 
+            this.panel50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel50.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel50.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel50.Location = new System.Drawing.Point(851, 65);
+            this.panel50.Name = "panel50";
+            this.panel50.Size = new System.Drawing.Size(56, 1);
+            this.panel50.TabIndex = 108;
+            // 
+            // textBox28
+            // 
+            this.textBox28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox28.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox28.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox28.Location = new System.Drawing.Point(851, 46);
+            this.textBox28.Multiline = true;
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(56, 20);
+            this.textBox28.TabIndex = 107;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label40.Location = new System.Drawing.Point(848, 30);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(59, 16);
+            this.label40.TabIndex = 106;
+            this.label40.Text = "Sessão";
+            // 
+            // panel49
+            // 
+            this.panel49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel49.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel49.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel49.Location = new System.Drawing.Point(773, 65);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(58, 1);
+            this.panel49.TabIndex = 105;
+            // 
+            // textBox27
+            // 
+            this.textBox27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox27.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox27.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox27.Location = new System.Drawing.Point(773, 46);
+            this.textBox27.Multiline = true;
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(58, 20);
+            this.textBox27.TabIndex = 104;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label39.Location = new System.Drawing.Point(770, 30);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(43, 16);
+            this.label39.TabIndex = 103;
+            this.label39.Text = "Zona";
+            // 
+            // panel48
+            // 
+            this.panel48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel48.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel48.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel48.Location = new System.Drawing.Point(602, 65);
+            this.panel48.Name = "panel48";
+            this.panel48.Size = new System.Drawing.Size(150, 1);
+            this.panel48.TabIndex = 102;
+            // 
+            // textBox26
+            // 
+            this.textBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox26.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox26.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox26.Location = new System.Drawing.Point(601, 46);
+            this.textBox26.Multiline = true;
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(150, 20);
+            this.textBox26.TabIndex = 101;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label38.Location = new System.Drawing.Point(598, 30);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(81, 16);
+            this.label38.TabIndex = 100;
+            this.label38.Text = "Tit. Eleitor";
+            // 
+            // panel47
+            // 
+            this.panel47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel47.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel47.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel47.Location = new System.Drawing.Point(485, 65);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(97, 1);
+            this.panel47.TabIndex = 99;
+            // 
+            // textBox25
+            // 
+            this.textBox25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox25.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox25.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox25.Location = new System.Drawing.Point(485, 46);
+            this.textBox25.Multiline = true;
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(97, 20);
+            this.textBox25.TabIndex = 98;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label37.Location = new System.Drawing.Point(482, 30);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(65, 16);
+            this.label37.TabIndex = 97;
+            this.label37.Text = "Emissor";
+            // 
+            // panel44
+            // 
+            this.panel44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel44.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel44.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel44.Location = new System.Drawing.Point(363, 65);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(99, 1);
+            this.panel44.TabIndex = 96;
+            // 
+            // panel45
+            // 
+            this.panel45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel45.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel45.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel45.Location = new System.Drawing.Point(186, 65);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(155, 1);
+            this.panel45.TabIndex = 95;
+            // 
+            // panel46
+            // 
+            this.panel46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel46.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel46.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel46.Location = new System.Drawing.Point(15, 65);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(150, 1);
+            this.panel46.TabIndex = 94;
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox10.Location = new System.Drawing.Point(363, 46);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(99, 20);
+            this.textBox10.TabIndex = 93;
+            // 
+            // textBox21
+            // 
+            this.textBox21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox21.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox21.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox21.Location = new System.Drawing.Point(185, 46);
+            this.textBox21.Multiline = true;
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(155, 20);
+            this.textBox21.TabIndex = 92;
+            // 
+            // textBox23
+            // 
+            this.textBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox23.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox23.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox23.Location = new System.Drawing.Point(14, 46);
+            this.textBox23.Multiline = true;
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(150, 20);
+            this.textBox23.TabIndex = 91;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label30.Location = new System.Drawing.Point(360, 30);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(106, 16);
+            this.label30.TabIndex = 90;
+            this.label30.Text = "Data Emissão";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label35.Location = new System.Drawing.Point(182, 30);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(26, 16);
+            this.label35.TabIndex = 89;
+            this.label35.Text = "RG";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label36.Location = new System.Drawing.Point(11, 30);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(35, 16);
+            this.label36.TabIndex = 88;
+            this.label36.Text = "CPF";
             // 
             // CadastroFuncionario
             // 
@@ -1606,6 +2111,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1264, 729);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -1639,6 +2145,8 @@
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1658,7 +2166,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox picFoto;
         private System.Windows.Forms.Button btnLogar;
         private System.Windows.Forms.Button button7;
@@ -1677,9 +2184,9 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox txtUltimoNome;
+        private System.Windows.Forms.TextBox txtSobrenome;
+        private System.Windows.Forms.TextBox txtPriNome;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
@@ -1713,27 +2220,26 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cmbBanco;
+        private System.Windows.Forms.ComboBox ddlBanco;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.ComboBox cmbDepart;
+        private System.Windows.Forms.ComboBox ddlDepart;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.ComboBox cmbCargo;
+        private System.Windows.Forms.ComboBox ddlCargo;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox cmbEc;
-        private System.Windows.Forms.ComboBox cmbCor;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox ddlTs;
+        private System.Windows.Forms.ComboBox ddlEc;
+        private System.Windows.Forms.ComboBox ddlCor;
+        private System.Windows.Forms.ComboBox ddlUF2;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.ComboBox cmbSexo;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.ComboBox ddlSexo;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel13;
@@ -1750,8 +2256,8 @@
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox ddlTipoMorad;
+        private System.Windows.Forms.ComboBox ddlUF;
         private System.Windows.Forms.Panel panel31;
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.Panel panel29;
@@ -1767,5 +2273,46 @@
         private System.Windows.Forms.Panel panel38;
         private System.Windows.Forms.Panel panel37;
         private System.Windows.Forms.Panel panel43;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Panel panel47;
+        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Panel panel44;
+        private System.Windows.Forms.Panel panel45;
+        private System.Windows.Forms.Panel panel46;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Panel panel52;
+        private System.Windows.Forms.ComboBox ddlEscolaridade;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Panel panel53;
+        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Panel panel51;
+        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Panel panel50;
+        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Panel panel49;
+        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Panel panel48;
+        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.ComboBox ddlComprRes;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Panel panel54;
+        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Panel panel55;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.ComboBox ddlNac;
+        private System.Windows.Forms.Panel panel56;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

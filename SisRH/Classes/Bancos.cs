@@ -17,7 +17,7 @@ namespace SisRH.Classes
             try
             {
                 
-                instrucaoSql = "select * from bancos";
+                instrucaoSql = "select * from tbbancos";
 
                 return c.RetornarDataSet(instrucaoSql);
             }

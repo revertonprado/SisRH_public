@@ -17,7 +17,24 @@ namespace SisRH.Classes
             try
             {
                 //instrucaoSql = "SELECT * FROM CLIENTE WHERE COD_CLI='" + _CodCli;
-                instrucaoSql = "select id_cargo,desc_cargo from tbCargo";
+                instrucaoSql = "select * from tbCargo";
+
+                return c.RetornarDataSet(instrucaoSql);
+            }
+
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public DataSet ListarSalario(int cod)
+        {
+            try
+            {
+                //instrucaoSql = "SELECT * FROM CLIENTE WHERE COD_CLI='" + _CodCli;
+                instrucaoSql = "select salario_cargo from tbCargo where id_cargo =" + cod;
 
                 return c.RetornarDataSet(instrucaoSql);
             }
