@@ -80,6 +80,18 @@ namespace SisRH.Telas_Cadastro
             "Outro"
         };
 
+        List<string> tiposJornadaTrabalho = new List<string>
+        {
+            "Selecione",
+            "07hrs-16hrs",
+            "08hrs-17hrs",
+            "09hrs-18hrs",
+            "08hrs-14hrs",
+            "09hrs-15hrs",
+            "10hrs-17hrs",
+            "11hrs-18hrs",
+        };
+
         public CadastroFuncionario()
         {
             InitializeComponent();
@@ -162,10 +174,17 @@ namespace SisRH.Telas_Cadastro
 
             ddlComprRes.SelectedIndex = 0;
 
+            foreach(string tipo in tiposJornadaTrabalho)
+            {
+                ddlJornada.Items.Add(tipo);
+            }
+            ddlJornada.SelectedIndex = 0;
             
             CarregarBanco();
             CarregarCargo();
             CarregarDepartamento();
+
+            ddlCargo.SelectedIndex = 1;
         }
 
         private void ExibirImagemButton_Click(object sender, EventArgs e)
@@ -236,6 +255,7 @@ namespace SisRH.Telas_Cadastro
                         FazerUploadDeFotoParaS3(caminhoLocalDaFoto);
                         MessageBox.Show("Foto Carregada com sucesso");
                         ExibirImagemButton_Click(sender, e);
+                        panel57.BackColor = Color.FromArgb(0,252,168);
                     }
                     catch (Exception ex)
                     {
@@ -276,7 +296,7 @@ namespace SisRH.Telas_Cadastro
 
         private void CarregarCargo()
         {
-            ddlCargo.Items.Add("Selecione");
+            
             Classes.Cargo cargo = new Classes.Cargo();
             ddlCargo.DataSource = cargo.ListarCargos().Tables[0];
             ddlCargo.DisplayMember = "desc_cargo";
@@ -286,8 +306,14 @@ namespace SisRH.Telas_Cadastro
 
         protected void ddlCargo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string cod1 = ddlCargo.SelectedValue.ToString(); // Obtém o valor selecionado no DropDownList
-            int cod = Convert.ToInt32(cod1);
+            
+
+            int cod;
+
+            string cod1 = "1";
+
+            cod = Convert.ToInt32(cod1);
+
 
             Classes.Cargo cargo = new Classes.Cargo();
             DataTable salarioTable = cargo.ListarSalario(cod).Tables[0];
@@ -312,6 +338,83 @@ namespace SisRH.Telas_Cadastro
             ddlDepart.DisplayMember = "nome_dep";
             ddlDepart.ValueMember = "id_dep";
 
+        }
+
+        private void CadastrarFuncionario(object sender, EventArgs e)
+        {
+            Classes.Funcionario func = new Classes.Funcionario();
+
+            if (txtPriNome.Text == "" || txtNascimento.Text == "" || txtCidade.Text == "" ||
+            ddlUF.SelectedIndex == 0 || ddlSexo.SelectedIndex == 0 ||
+            ddlSexo.SelectedIndex == 0 || ddlCor.SelectedIndex == 0 || ddlTs.SelectedIndex == 0 ||
+            txtMae.Text == "" || txtPai.Text == "" || ddlEc.SelectedIndex == 0 ||
+            txtCEP.Text == "" || txtLogradouro.Text == "" || txtNum.Text == "" || txtBairro.Text == "" ||
+            ddlUF2.SelectedIndex == 0 || txtCompl.Text == "" || ddlTipoMorad.SelectedIndex == 0 ||
+            txtNumAgenc.Text == "" || txtNumConta.Text == "" || txtCel.Text == "" || txtTel.Text == "" || txtCPF.Text == "" || txtRG.Text == "" || txtEmissao.Text =="" ||
+            ddlEscolaridade.SelectedIndex == 0 || txtCNS.Text == "" || ddlComprRes.SelectedIndex == 0)
+            {
+                MessageBox.Show("Complete os campos Obrigarios");
+            }
+            else
+            {
+                func.PrimeroNome_Func1 = txtPriNome.Text;
+                func.Sobrenome_Func1 = txtSobrenome.Text;
+                func.UltimoNome_Func1 = txtUltimoNome.Text;
+                func.Matricula_Func1 = Convert.ToInt32(txtMatricula.Text);
+                func.Data_Nasc_Func1 = Convert.ToDateTime(txtNascimento.Text);
+                func.Nacionalidade_Func1 = ddlNac.SelectedItem.ToString();
+                if (ddlSexo.SelectedIndex == 1)
+                {
+                    func.Sexo_Func1 = 1;
+                }
+                else
+                {
+                    func.Sexo_Func1 = 0;
+                }
+                func.Raca_Func1 = ddlCor.SelectedItem.ToString();
+                func.Tipo_Sang_Func1 = ddlTs.SelectedItem.ToString();
+                func.Nm_Mae_Func1 = txtMae.Text;
+                func.Nm_Pai_Func1 = txtPai.Text;
+                func.EstCivil_Func1 = ddlEc.SelectedItem.ToString();
+                func.CidadeNasc_Func1 = txtCidade.Text;
+                func.Num_Res_Func1 = Convert.ToInt32(txtNum.Text);
+                func.Compl_Func1 = txtCompl.Text;
+                func.Tipo_Res_Func1 = ddlTipoMorad.SelectedItem.ToString();
+                func.Cel_Func1 = txtCel.Text.Replace("-", "").Replace("(", "").Replace(")", "");
+                func.NomeConjunge_Func1 = txtConjunge.Text;
+                func.Tel_Func1 = txtTel.Text.Replace("-", "").Replace("(","").Replace(")", ""); 
+                if (chbwpp.Checked == true)
+                {
+                    func.Whatsapp_func1 = 1;
+                }
+                else
+                {
+                    func.Whatsapp_func1 = 0;
+                }
+                func.Email_Func1 = txtEmail.Text;
+                func.Email_Corp_Func1 = txtEmailCorp.Text;
+                func.Fk_Banco1 = Convert.ToInt32(ddlBanco.SelectedValue.ToString());
+                func.Fk_Cargo1 = Convert.ToInt32(ddlCargo.SelectedValue.ToString());
+                func.Num_Agenc_Func1 = txtNumAgenc.Text;
+                func.Num_Conta_Func1 = txtNumConta.Text;
+                func.CPF_Func1 = txtCPF.Text.Replace("-", "").Replace(",", "").Replace(".", "");
+                func.Rg_Func1 = txtRG.Text;
+                func.Dt_Emissao_Func1 = Convert.ToDateTime(txtEmissao.Text);
+                func.Orgao_Emissor_Func1 = txtEmissor.Text;
+                func.Reservista_Func1 = txtReservista.Text;
+                func.Titulo_Eleitor_Func1 = txtTitEleitor.Text;
+                func.Zona_Eleitoral_Func1 = txtZona.Text;
+                func.Sessao_Eleitoral_Func1 = txtSessao.Text;
+                func.Cidade_Eleitoral_Func1 = txtCidVoto.Text;
+                func.Escolaridade_Func1 = ddlEscolaridade.SelectedItem.ToString();
+                func.CNS_Func1 = txtCNS.Text;
+                func.Comprov_Residencia_Func1 = ddlComprRes.SelectedItem.ToString();
+                func.Fk_Cep1 = Convert.ToInt32(txtCEP.Text);
+                func.Fk_Dep1 = Convert.ToInt32(ddlDepart.SelectedValue.ToString());
+
+                func.IncluirComParametro();
+
+            }
         }
 
 
