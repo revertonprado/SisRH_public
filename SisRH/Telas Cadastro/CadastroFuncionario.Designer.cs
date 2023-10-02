@@ -35,15 +35,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.picFoto = new System.Windows.Forms.PictureBox();
-            this.btnLogar = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtNascimento = new System.Windows.Forms.MaskedTextBox();
             this.panel56 = new System.Windows.Forms.Panel();
@@ -93,7 +86,12 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.panel57 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label = new System.Windows.Forms.Label();
+            this.panel58 = new System.Windows.Forms.Panel();
+            this.txtCidade1 = new System.Windows.Forms.TextBox();
+            this.txtUF = new System.Windows.Forms.TextBox();
             this.panel31 = new System.Windows.Forms.Panel();
             this.panel30 = new System.Windows.Forms.Panel();
             this.panel29 = new System.Windows.Forms.Panel();
@@ -112,10 +110,11 @@
             this.txtLogradouro = new System.Windows.Forms.TextBox();
             this.txtCEP = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.ddlUF2 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtTel = new System.Windows.Forms.MaskedTextBox();
+            this.txtCel = new System.Windows.Forms.MaskedTextBox();
             this.panel42 = new System.Windows.Forms.Panel();
             this.panel34 = new System.Windows.Forms.Panel();
             this.panel33 = new System.Windows.Forms.Panel();
@@ -151,10 +150,15 @@
             this.label34 = new System.Windows.Forms.Label();
             this.ddlCargo = new System.Windows.Forms.ComboBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.txtidcep = new System.Windows.Forms.TextBox();
+            this.txtFuncProx = new System.Windows.Forms.TextBox();
+            this.txtEmissao = new System.Windows.Forms.MaskedTextBox();
+            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.panel55 = new System.Windows.Forms.Panel();
             this.panel54 = new System.Windows.Forms.Panel();
             this.txtReservista = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
+            this.ddlComprRes = new System.Windows.Forms.ComboBox();
             this.label44 = new System.Windows.Forms.Label();
             this.panel52 = new System.Windows.Forms.Panel();
             this.ddlEscolaridade = new System.Windows.Forms.ComboBox();
@@ -184,18 +188,17 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
+            this.picFoto = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.btnLogar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.txtTel = new System.Windows.Forms.MaskedTextBox();
-            this.txtCel = new System.Windows.Forms.MaskedTextBox();
-            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
-            this.ddlComprRes = new System.Windows.Forms.ComboBox();
-            this.panel57 = new System.Windows.Forms.Panel();
-            this.txtEmissao = new System.Windows.Forms.MaskedTextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel20.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -203,6 +206,8 @@
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -271,62 +276,6 @@
             this.panel7.Size = new System.Drawing.Size(200, 725);
             this.panel7.TabIndex = 18;
             // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.button5.Location = new System.Drawing.Point(10, 664);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(184, 55);
-            this.button5.TabIndex = 32;
-            this.button5.Text = "Cadastrar Funcionario";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.CadastrarFuncionario);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(10, 193);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 55);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Dados Pessoais";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(10, 269);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(184, 55);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "Documentos";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SisRH.Properties.Resources.nova_logo_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 173);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
@@ -349,48 +298,6 @@
             this.label1.Size = new System.Drawing.Size(243, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de Funcionário";
-            // 
-            // picFoto
-            // 
-            this.picFoto.Image = global::SisRH.Properties.Resources.nova_logo_removebg_preview;
-            this.picFoto.Location = new System.Drawing.Point(897, 25);
-            this.picFoto.Name = "picFoto";
-            this.picFoto.Size = new System.Drawing.Size(139, 125);
-            this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picFoto.TabIndex = 20;
-            this.picFoto.TabStop = false;
-            // 
-            // btnLogar
-            // 
-            this.btnLogar.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogar.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.btnLogar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnLogar.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.btnLogar.Location = new System.Drawing.Point(896, 155);
-            this.btnLogar.Name = "btnLogar";
-            this.btnLogar.Size = new System.Drawing.Size(141, 33);
-            this.btnLogar.TabIndex = 25;
-            this.btnLogar.Text = "Upload";
-            this.btnLogar.UseVisualStyleBackColor = true;
-            this.btnLogar.Click += new System.EventHandler(this.SelecionarFotoButton_Click);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button7.Location = new System.Drawing.Point(896, 194);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(141, 33);
-            this.button7.TabIndex = 26;
-            this.button7.Text = "Tirar Foto";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupBox1
             // 
@@ -978,8 +885,20 @@
             this.label27.TabIndex = 57;
             this.label27.Text = "Primeiro Nome";
             // 
+            // panel57
+            // 
+            this.panel57.BackColor = System.Drawing.Color.DarkRed;
+            this.panel57.Location = new System.Drawing.Point(896, 24);
+            this.panel57.Name = "panel57";
+            this.panel57.Size = new System.Drawing.Size(141, 127);
+            this.panel57.TabIndex = 112;
+            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label);
+            this.groupBox2.Controls.Add(this.panel58);
+            this.groupBox2.Controls.Add(this.txtCidade1);
+            this.groupBox2.Controls.Add(this.txtUF);
             this.groupBox2.Controls.Add(this.panel31);
             this.groupBox2.Controls.Add(this.panel30);
             this.groupBox2.Controls.Add(this.panel29);
@@ -998,7 +917,6 @@
             this.groupBox2.Controls.Add(this.txtLogradouro);
             this.groupBox2.Controls.Add(this.txtCEP);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.ddlUF2);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.ForeColor = System.Drawing.Color.Snow;
@@ -1010,11 +928,55 @@
             this.groupBox2.Text = "Endereço";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label.Location = new System.Drawing.Point(526, 33);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(57, 16);
+            this.label.TabIndex = 114;
+            this.label.Text = "Cidade";
+            // 
+            // panel58
+            // 
+            this.panel58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel58.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel58.Location = new System.Drawing.Point(529, 67);
+            this.panel58.Name = "panel58";
+            this.panel58.Size = new System.Drawing.Size(102, 1);
+            this.panel58.TabIndex = 113;
+            // 
+            // txtCidade1
+            // 
+            this.txtCidade1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtCidade1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCidade1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCidade1.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCidade1.Location = new System.Drawing.Point(529, 48);
+            this.txtCidade1.Multiline = true;
+            this.txtCidade1.Name = "txtCidade1";
+            this.txtCidade1.Size = new System.Drawing.Size(102, 20);
+            this.txtCidade1.TabIndex = 112;
+            // 
+            // txtUF
+            // 
+            this.txtUF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtUF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUF.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUF.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtUF.Location = new System.Drawing.Point(648, 47);
+            this.txtUF.Multiline = true;
+            this.txtUF.Name = "txtUF";
+            this.txtUF.Size = new System.Drawing.Size(80, 20);
+            this.txtUF.TabIndex = 111;
+            // 
             // panel31
             // 
             this.panel31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel31.Location = new System.Drawing.Point(903, 66);
+            this.panel31.Location = new System.Drawing.Point(902, 68);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(132, 1);
             this.panel31.TabIndex = 110;
@@ -1023,7 +985,7 @@
             // 
             this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel30.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel30.Location = new System.Drawing.Point(744, 65);
+            this.panel30.Location = new System.Drawing.Point(744, 67);
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(141, 1);
             this.panel30.TabIndex = 109;
@@ -1032,7 +994,7 @@
             // 
             this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel29.Location = new System.Drawing.Point(648, 66);
+            this.panel29.Location = new System.Drawing.Point(648, 67);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(80, 1);
             this.panel29.TabIndex = 108;
@@ -1044,7 +1006,7 @@
             this.ddlTipoMorad.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ddlTipoMorad.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.ddlTipoMorad.FormattingEnabled = true;
-            this.ddlTipoMorad.Location = new System.Drawing.Point(903, 43);
+            this.ddlTipoMorad.Location = new System.Drawing.Point(902, 45);
             this.ddlTipoMorad.Name = "ddlTipoMorad";
             this.ddlTipoMorad.Size = new System.Drawing.Size(132, 24);
             this.ddlTipoMorad.TabIndex = 107;
@@ -1053,7 +1015,7 @@
             // 
             this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel28.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel28.Location = new System.Drawing.Point(372, 66);
+            this.panel28.Location = new System.Drawing.Point(286, 67);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(107, 1);
             this.panel28.TabIndex = 106;
@@ -1062,18 +1024,18 @@
             // 
             this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel27.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel27.Location = new System.Drawing.Point(165, 66);
+            this.panel27.Location = new System.Drawing.Point(128, 66);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(187, 1);
+            this.panel27.Size = new System.Drawing.Size(142, 1);
             this.panel27.TabIndex = 105;
             // 
             // panel26
             // 
             this.panel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.panel26.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel26.Location = new System.Drawing.Point(497, 65);
+            this.panel26.Location = new System.Drawing.Point(409, 67);
             this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(140, 1);
+            this.panel26.Size = new System.Drawing.Size(102, 1);
             this.panel26.TabIndex = 104;
             // 
             // panel25
@@ -1082,7 +1044,7 @@
             this.panel25.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel25.Location = new System.Drawing.Point(15, 66);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(135, 1);
+            this.panel25.Size = new System.Drawing.Size(98, 1);
             this.panel25.TabIndex = 103;
             // 
             // label5
@@ -1090,7 +1052,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(900, 25);
+            this.label5.Location = new System.Drawing.Point(899, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 16);
             this.label5.TabIndex = 88;
@@ -1101,7 +1063,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(742, 30);
+            this.label4.Location = new System.Drawing.Point(742, 33);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 16);
             this.label4.TabIndex = 86;
@@ -1113,7 +1075,7 @@
             this.txtCompl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCompl.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCompl.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtCompl.Location = new System.Drawing.Point(745, 46);
+            this.txtCompl.Location = new System.Drawing.Point(745, 49);
             this.txtCompl.Multiline = true;
             this.txtCompl.Name = "txtCompl";
             this.txtCompl.Size = new System.Drawing.Size(140, 20);
@@ -1124,7 +1086,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(654, 26);
+            this.label3.Location = new System.Drawing.Point(647, 28);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(26, 16);
             this.label3.TabIndex = 84;
@@ -1135,7 +1097,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(494, 31);
+            this.label2.Location = new System.Drawing.Point(406, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 16);
             this.label2.TabIndex = 82;
@@ -1147,10 +1109,10 @@
             this.txtBairro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBairro.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairro.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtBairro.Location = new System.Drawing.Point(497, 46);
+            this.txtBairro.Location = new System.Drawing.Point(409, 48);
             this.txtBairro.Multiline = true;
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(140, 20);
+            this.txtBairro.Size = new System.Drawing.Size(102, 20);
             this.txtBairro.TabIndex = 81;
             // 
             // txtNum
@@ -1159,7 +1121,7 @@
             this.txtNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNum.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNum.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtNum.Location = new System.Drawing.Point(372, 47);
+            this.txtNum.Location = new System.Drawing.Point(286, 48);
             this.txtNum.Multiline = true;
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(108, 20);
@@ -1171,10 +1133,10 @@
             this.txtLogradouro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLogradouro.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogradouro.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtLogradouro.Location = new System.Drawing.Point(165, 47);
+            this.txtLogradouro.Location = new System.Drawing.Point(128, 47);
             this.txtLogradouro.Multiline = true;
             this.txtLogradouro.Name = "txtLogradouro";
-            this.txtLogradouro.Size = new System.Drawing.Size(188, 20);
+            this.txtLogradouro.Size = new System.Drawing.Size(142, 20);
             this.txtLogradouro.TabIndex = 61;
             // 
             // txtCEP
@@ -1186,38 +1148,27 @@
             this.txtCEP.Location = new System.Drawing.Point(15, 47);
             this.txtCEP.Multiline = true;
             this.txtCEP.Name = "txtCEP";
-            this.txtCEP.Size = new System.Drawing.Size(134, 20);
+            this.txtCEP.Size = new System.Drawing.Size(98, 20);
             this.txtCEP.TabIndex = 60;
+            this.txtCEP.Leave += new System.EventHandler(this.PegarCEP);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(369, 31);
+            this.label12.Location = new System.Drawing.Point(283, 32);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(64, 16);
             this.label12.TabIndex = 59;
             this.label12.Text = "Número";
-            // 
-            // ddlUF2
-            // 
-            this.ddlUF2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.ddlUF2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ddlUF2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ddlUF2.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.ddlUF2.FormattingEnabled = true;
-            this.ddlUF2.Location = new System.Drawing.Point(648, 43);
-            this.ddlUF2.Name = "ddlUF2";
-            this.ddlUF2.Size = new System.Drawing.Size(80, 24);
-            this.ddlUF2.TabIndex = 89;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(162, 31);
+            this.label13.Location = new System.Drawing.Point(125, 31);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(90, 16);
             this.label13.TabIndex = 58;
@@ -1257,6 +1208,30 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Contato";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // txtTel
+            // 
+            this.txtTel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtTel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txtTel.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtTel.Location = new System.Drawing.Point(264, 54);
+            this.txtTel.Mask = "(00)0000-0000";
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(132, 16);
+            this.txtTel.TabIndex = 113;
+            // 
+            // txtCel
+            // 
+            this.txtCel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtCel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txtCel.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCel.Location = new System.Drawing.Point(16, 50);
+            this.txtCel.Mask = "(00)00000-0000";
+            this.txtCel.Name = "txtCel";
+            this.txtCel.Size = new System.Drawing.Size(132, 16);
+            this.txtCel.TabIndex = 112;
             // 
             // panel42
             // 
@@ -1644,6 +1619,8 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.txtidcep);
+            this.groupBox6.Controls.Add(this.txtFuncProx);
             this.groupBox6.Controls.Add(this.txtEmissao);
             this.groupBox6.Controls.Add(this.txtCPF);
             this.groupBox6.Controls.Add(this.panel55);
@@ -1689,6 +1666,47 @@
             this.groupBox6.Text = "Documentos";
             this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
+            // txtidcep
+            // 
+            this.txtidcep.Location = new System.Drawing.Point(867, 101);
+            this.txtidcep.Name = "txtidcep";
+            this.txtidcep.Size = new System.Drawing.Size(25, 20);
+            this.txtidcep.TabIndex = 128;
+            this.txtidcep.Visible = false;
+            // 
+            // txtFuncProx
+            // 
+            this.txtFuncProx.Location = new System.Drawing.Point(836, 101);
+            this.txtFuncProx.Name = "txtFuncProx";
+            this.txtFuncProx.Size = new System.Drawing.Size(25, 20);
+            this.txtFuncProx.TabIndex = 127;
+            this.txtFuncProx.Visible = false;
+            // 
+            // txtEmissao
+            // 
+            this.txtEmissao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtEmissao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmissao.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txtEmissao.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtEmissao.Location = new System.Drawing.Point(363, 48);
+            this.txtEmissao.Mask = "00/00/0000";
+            this.txtEmissao.Name = "txtEmissao";
+            this.txtEmissao.Size = new System.Drawing.Size(101, 16);
+            this.txtEmissao.TabIndex = 126;
+            // 
+            // txtCPF
+            // 
+            this.txtCPF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPF.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txtCPF.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCPF.Location = new System.Drawing.Point(16, 47);
+            this.txtCPF.Mask = "000.000.000-00";
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(147, 16);
+            this.txtCPF.TabIndex = 113;
+            this.txtCPF.Leave += new System.EventHandler(this.VerificaCPF);
+            // 
             // panel55
             // 
             this.panel55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
@@ -1731,6 +1749,18 @@
             this.label45.Size = new System.Drawing.Size(84, 16);
             this.label45.TabIndex = 122;
             this.label45.Text = "Reservista";
+            // 
+            // ddlComprRes
+            // 
+            this.ddlComprRes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.ddlComprRes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlComprRes.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ddlComprRes.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ddlComprRes.FormattingEnabled = true;
+            this.ddlComprRes.Location = new System.Drawing.Point(439, 97);
+            this.ddlComprRes.Name = "ddlComprRes";
+            this.ddlComprRes.Size = new System.Drawing.Size(199, 24);
+            this.ddlComprRes.TabIndex = 119;
             // 
             // label44
             // 
@@ -2049,6 +2079,48 @@
             this.label36.TabIndex = 88;
             this.label36.Text = "CPF";
             // 
+            // picFoto
+            // 
+            this.picFoto.Image = global::SisRH.Properties.Resources.nova_logo_removebg_preview;
+            this.picFoto.Location = new System.Drawing.Point(897, 25);
+            this.picFoto.Name = "picFoto";
+            this.picFoto.Size = new System.Drawing.Size(139, 125);
+            this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFoto.TabIndex = 20;
+            this.picFoto.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button7.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button7.Location = new System.Drawing.Point(896, 194);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(141, 33);
+            this.button7.TabIndex = 26;
+            this.button7.Text = "Tirar Foto";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // btnLogar
+            // 
+            this.btnLogar.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogar.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.btnLogar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLogar.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.btnLogar.Location = new System.Drawing.Point(896, 155);
+            this.btnLogar.Name = "btnLogar";
+            this.btnLogar.Size = new System.Drawing.Size(141, 33);
+            this.btnLogar.TabIndex = 25;
+            this.btnLogar.Text = "Upload";
+            this.btnLogar.UseVisualStyleBackColor = true;
+            this.btnLogar.Click += new System.EventHandler(this.SelecionarFotoButton_Click);
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
@@ -2064,73 +2136,62 @@
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // txtTel
+            // button5
             // 
-            this.txtTel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.txtTel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
-            this.txtTel.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtTel.Location = new System.Drawing.Point(264, 54);
-            this.txtTel.Mask = "(00)0000-0000";
-            this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(132, 16);
-            this.txtTel.TabIndex = 113;
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.button5.Location = new System.Drawing.Point(10, 664);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(184, 55);
+            this.button5.TabIndex = 32;
+            this.button5.Text = "Cadastrar Funcionario";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.CadastrarFuncionario);
             // 
-            // txtCel
+            // button1
             // 
-            this.txtCel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.txtCel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
-            this.txtCel.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtCel.Location = new System.Drawing.Point(16, 50);
-            this.txtCel.Mask = "(00)00000-0000";
-            this.txtCel.Name = "txtCel";
-            this.txtCel.Size = new System.Drawing.Size(132, 16);
-            this.txtCel.TabIndex = 112;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.button1.Location = new System.Drawing.Point(10, 193);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 55);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Dados Pessoais";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // txtCPF
+            // button3
             // 
-            this.txtCPF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPF.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
-            this.txtCPF.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtCPF.Location = new System.Drawing.Point(16, 47);
-            this.txtCPF.Mask = "000.000.000-00";
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(147, 16);
-            this.txtCPF.TabIndex = 113;
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.button3.Location = new System.Drawing.Point(10, 269);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(184, 55);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "Documentos";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.groupBox6_Enter);
             // 
-            // ddlComprRes
+            // pictureBox1
             // 
-            this.ddlComprRes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.ddlComprRes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ddlComprRes.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ddlComprRes.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.ddlComprRes.FormattingEnabled = true;
-            this.ddlComprRes.Location = new System.Drawing.Point(439, 97);
-            this.ddlComprRes.Name = "ddlComprRes";
-            this.ddlComprRes.Size = new System.Drawing.Size(199, 24);
-            this.ddlComprRes.TabIndex = 119;
-            // 
-            // panel57
-            // 
-            this.panel57.BackColor = System.Drawing.Color.DarkRed;
-            this.panel57.Location = new System.Drawing.Point(896, 24);
-            this.panel57.Name = "panel57";
-            this.panel57.Size = new System.Drawing.Size(141, 127);
-            this.panel57.TabIndex = 112;
-            // 
-            // txtEmissao
-            // 
-            this.txtEmissao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.txtEmissao.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmissao.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
-            this.txtEmissao.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtEmissao.Location = new System.Drawing.Point(363, 48);
-            this.txtEmissao.Mask = "00/00/0000";
-            this.txtEmissao.Name = "txtEmissao";
-            this.txtEmissao.Size = new System.Drawing.Size(101, 16);
-            this.txtEmissao.TabIndex = 126;
+            this.pictureBox1.Image = global::SisRH.Properties.Resources.nova_logo_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(196, 173);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // CadastroFuncionario
             // 
@@ -2157,10 +2218,8 @@
             this.Load += new System.EventHandler(this.CadastroFuncionario_Load);
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel20.ResumeLayout(false);
@@ -2174,6 +2233,8 @@
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2197,7 +2258,6 @@
         private System.Windows.Forms.Button btnLogar;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtMatricula;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtConjunge;
         private System.Windows.Forms.Label label17;
@@ -2259,7 +2319,6 @@
         private System.Windows.Forms.ComboBox ddlTs;
         private System.Windows.Forms.ComboBox ddlEc;
         private System.Windows.Forms.ComboBox ddlCor;
-        private System.Windows.Forms.ComboBox ddlUF2;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.ComboBox ddlSexo;
         private System.Windows.Forms.Panel panel15;
@@ -2343,5 +2402,12 @@
         private System.Windows.Forms.Panel panel57;
         public System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.MaskedTextBox txtEmissao;
+        private System.Windows.Forms.TextBox txtFuncProx;
+        private System.Windows.Forms.TextBox txtUF;
+        private System.Windows.Forms.TextBox txtidcep;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Panel panel58;
+        private System.Windows.Forms.TextBox txtCidade1;
+        public System.Windows.Forms.TextBox txtMatricula;
     }
 }
