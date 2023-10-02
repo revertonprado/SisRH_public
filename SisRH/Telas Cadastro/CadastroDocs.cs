@@ -26,7 +26,8 @@ namespace SisRH.Telas_Cadastro
         public CadastroDocs()
         {
             InitializeComponent();
-
+            PegarFunc();
+           
             ExibirImagemButton_Click();
         }
 
@@ -144,7 +145,7 @@ namespace SisRH.Telas_Cadastro
             string accessKey = "AKIAVM3YRTJTT6A2QL7R";
             string secretKey = "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";
             string bucketName = "docspim4semestre";
-            string objectKey = "Fotos-Perfil/" + lblPront.Text;
+            string objectKey = "Fotos-Perfil/" + txtMatricula.Text;
 
             var credentials = new BasicAWSCredentials(accessKey, secretKey);
             var config = new AmazonS3Config
@@ -247,6 +248,27 @@ namespace SisRH.Telas_Cadastro
                 transferUtility.Upload(fileStream, bucketName, objectKey);
             }
         }
+
+        private void PegarFunc()
+        {
+            Classes.Funcionario f = new Classes.Funcionario();
+            System.Data.SqlClient.SqlDataReader ddr;
+            ddr = f.ListarUltimoMatricula();
+            ddr.Read();
+            if (ddr.HasRows)
+            {
+                if (ddr["matricula_func"].ToString() == "")
+                {
+                    txtMatricula.Text = "1";
+                }
+                else
+                {
+                    txtMatricula.Text = ddr["matricula_func"].ToString();
+                }
+            }
+        }
+
+
 
         private void panel7_Paint(object sender, PaintEventArgs e)
         {

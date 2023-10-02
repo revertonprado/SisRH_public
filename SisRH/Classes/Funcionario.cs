@@ -183,6 +183,21 @@ namespace SisRH.Classes
             }
         }
 
+        public SqlDataReader ListarUltimoMatricula()
+        {
+            try
+            {
+                instrucaoSql = "select matricula_func from tbfuncionario where id_func = (select max(id_func)as id_func from tbFuncionario)";
+                return c.RetornarDataReader(instrucaoSql);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+
 
 
 
