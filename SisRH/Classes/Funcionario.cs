@@ -187,7 +187,7 @@ namespace SisRH.Classes
         {
             try
             {
-                instrucaoSql = "select matricula_func from tbfuncionario where id_func = (select max(id_func)as id_func from tbFuncionario)";
+                instrucaoSql = "select matricula_func, primeiro_nm_func from tbfuncionario where id_func = (select max(id_func)as id_func from tbFuncionario)";
                 return c.RetornarDataReader(instrucaoSql);
             }
             catch (Exception ex)

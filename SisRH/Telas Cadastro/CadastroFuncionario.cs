@@ -18,6 +18,7 @@ using Amazon.Runtime;
 using System.Xml.Serialization;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using SisRH.Classes;
+using SisRH.Properties;
 
 namespace SisRH.Telas_Cadastro
 {
@@ -343,104 +344,113 @@ namespace SisRH.Telas_Cadastro
             Classes.Arquivos arquivos = new Classes.Arquivos();
             Classes.ValidaCPF cpf = new Classes.ValidaCPF();
 
-            if (panel57.BackColor != Color.FromArgb(0, 252, 168))
+
+            DialogResult resultado = MessageBox.Show("Você deseja realmente cadastar o funcionario?", "SisRH", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
             {
-                MessageBox.Show("Cadastre a imagem do Funcionario");
-            }
-            else
-            {
-                if (txtPriNome.Text == "" || txtNascimento.Text == "" || txtCidade.Text == "" ||
-           ddlUF.SelectedIndex == 0 || ddlSexo.SelectedIndex == 0 ||
-           ddlSexo.SelectedIndex == 0 || ddlCor.SelectedIndex == 0 || ddlTs.SelectedIndex == 0 ||
-           txtMae.Text == "" || txtPai.Text == "" || ddlEc.SelectedIndex == 0 ||
-           txtCEP.Text == "" || txtLogradouro.Text == "" || txtNum.Text == "" || txtBairro.Text == "" ||
-           txtUF.Text == "" || txtCompl.Text == "" || ddlTipoMorad.SelectedIndex == 0 ||
-           txtNumAgenc.Text == "" || txtNumConta.Text == "" || txtCel.Text == "" || txtTel.Text == "" || txtCPF.Text == "" || txtRG.Text == "" || txtEmissao.Text == "" ||
-           ddlEscolaridade.SelectedIndex == 0 || txtCNS.Text == "" || ddlComprRes.SelectedIndex == 0)
+                if (panel57.BackColor != Color.FromArgb(0, 252, 168))
                 {
-                    MessageBox.Show("Complete os campos Obrigarios");
+                    MessageBox.Show("Cadastre a imagem do Funcionario");
                 }
                 else
                 {
-                    func.PrimeroNome_Func1 = txtPriNome.Text;
-                    func.Sobrenome_Func1 = txtSobrenome.Text;
-                    func.UltimoNome_Func1 = txtUltimoNome.Text;
-                    func.Matricula_Func1 = Convert.ToInt32(txtMatricula.Text);
-                    func.Data_Nasc_Func1 = Convert.ToDateTime(txtNascimento.Text);
-                    func.Nacionalidade_Func1 = ddlNac.SelectedItem.ToString();
-                    if (ddlSexo.SelectedIndex == 1)
+                    if (txtPriNome.Text == "" || txtNascimento.Text == "" || txtCidade.Text == "" ||
+               ddlUF.SelectedIndex == 0 || ddlSexo.SelectedIndex == 0 ||
+               ddlSexo.SelectedIndex == 0 || ddlCor.SelectedIndex == 0 || ddlTs.SelectedIndex == 0 ||
+               txtMae.Text == "" || txtPai.Text == "" || ddlEc.SelectedIndex == 0 ||
+               txtCEP.Text == "" || txtLogradouro.Text == "" || txtNum.Text == "" || txtBairro.Text == "" ||
+               txtUF.Text == "" || txtCompl.Text == "" || ddlTipoMorad.SelectedIndex == 0 ||
+               txtNumAgenc.Text == "" || txtNumConta.Text == "" || txtCel.Text == "" || txtTel.Text == "" || txtCPF.Text == "" || txtRG.Text == "" || txtEmissao.Text == "" ||
+               ddlEscolaridade.SelectedIndex == 0 || txtCNS.Text == "" || ddlComprRes.SelectedIndex == 0)
                     {
-                        func.Sexo_Func1 = 1;
+                        MessageBox.Show("Complete os campos Obrigarios");
                     }
                     else
                     {
-                        func.Sexo_Func1 = 0;
+                        func.PrimeroNome_Func1 = txtPriNome.Text;
+                        func.Sobrenome_Func1 = txtSobrenome.Text;
+                        func.UltimoNome_Func1 = txtUltimoNome.Text;
+                        func.Matricula_Func1 = Convert.ToInt32(txtMatricula.Text);
+                        func.Data_Nasc_Func1 = Convert.ToDateTime(txtNascimento.Text);
+                        func.Nacionalidade_Func1 = ddlNac.SelectedItem.ToString();
+                        if (ddlSexo.SelectedIndex == 1)
+                        {
+                            func.Sexo_Func1 = 1;
+                        }
+                        else
+                        {
+                            func.Sexo_Func1 = 0;
+                        }
+                        func.Raca_Func1 = ddlCor.SelectedItem.ToString();
+                        func.Tipo_Sang_Func1 = ddlTs.SelectedItem.ToString();
+                        func.Nm_Mae_Func1 = txtMae.Text;
+                        func.Nm_Pai_Func1 = txtPai.Text;
+                        func.EstCivil_Func1 = ddlEc.SelectedItem.ToString();
+                        func.CidadeNasc_Func1 = txtCidade.Text;
+                        func.Num_Res_Func1 = Convert.ToInt32(txtNum.Text);
+                        func.Compl_Func1 = txtCompl.Text;
+                        func.Tipo_Res_Func1 = ddlTipoMorad.SelectedItem.ToString();
+                        func.Cel_Func1 = txtCel.Text.Replace("-", "").Replace("(", "").Replace(")", "");
+                        func.NomeConjunge_Func1 = txtConjunge.Text;
+                        func.Tel_Func1 = txtTel.Text.Replace("-", "").Replace("(", "").Replace(")", "");
+                        if (chbwpp.Checked == true)
+                        {
+                            func.Whatsapp_func1 = 1;
+                        }
+                        else
+                        {
+                            func.Whatsapp_func1 = 0;
+                        }
+                        func.Email_Func1 = txtEmail.Text;
+                        func.Email_Corp_Func1 = txtEmailCorp.Text;
+                        func.Fk_Banco1 = Convert.ToInt32(ddlBanco.SelectedValue.ToString());
+                        func.Fk_Cargo1 = Convert.ToInt32(ddlCargo.SelectedValue.ToString());
+                        func.Num_Agenc_Func1 = txtNumAgenc.Text;
+                        func.Num_Conta_Func1 = txtNumConta.Text;
+                        func.CPF_Func1 = txtCPF.Text.Replace("-", "").Replace(",", "").Replace(".", "");
+
+
+
+
+                        func.Rg_Func1 = txtRG.Text;
+                        func.Dt_Emissao_Func1 = Convert.ToDateTime(txtEmissao.Text);
+                        func.Orgao_Emissor_Func1 = txtEmissor.Text;
+                        func.Reservista_Func1 = txtReservista.Text;
+                        func.Titulo_Eleitor_Func1 = txtTitEleitor.Text;
+                        func.Zona_Eleitoral_Func1 = txtZona.Text;
+                        func.Sessao_Eleitoral_Func1 = txtSessao.Text;
+                        func.Cidade_Eleitoral_Func1 = txtCidVoto.Text;
+                        func.Escolaridade_Func1 = ddlEscolaridade.SelectedItem.ToString();
+                        func.CNS_Func1 = txtCNS.Text;
+                        func.Comprov_Residencia_Func1 = ddlComprRes.SelectedItem.ToString();
+                        func.Fk_Cep1 = Convert.ToInt32(txtidcep.Text);
+                        func.Fk_Dep1 = Convert.ToInt32(ddlDepart.SelectedValue.ToString());
+                        func.IncluirComParametro();
+
+                        PegarFunc();
+
+                        //Envio Foto
+                        arquivos.Caminho_arq = "docspim4semestre/Fotos-Perfil/" + txtMatricula.Text;
+                        arquivos.Tipo_arq = "png"; //alterar para definir automaticamente
+                        arquivos.Tipo_doc_arq = "Foto";
+                        arquivos.St_ativo = 1;
+                        arquivos.Fk_func = Convert.ToInt32(txtFuncProx.Text);
+                        arquivos.IncluirComParametro();
+
+                        MessageBox.Show("Funcionario Cadastrado com Sucesso");
+
+                        AbrirDocumentos(sender, e);
+
                     }
-                    func.Raca_Func1 = ddlCor.SelectedItem.ToString();
-                    func.Tipo_Sang_Func1 = ddlTs.SelectedItem.ToString();
-                    func.Nm_Mae_Func1 = txtMae.Text;
-                    func.Nm_Pai_Func1 = txtPai.Text;
-                    func.EstCivil_Func1 = ddlEc.SelectedItem.ToString();
-                    func.CidadeNasc_Func1 = txtCidade.Text;
-                    func.Num_Res_Func1 = Convert.ToInt32(txtNum.Text);
-                    func.Compl_Func1 = txtCompl.Text;
-                    func.Tipo_Res_Func1 = ddlTipoMorad.SelectedItem.ToString();
-                    func.Cel_Func1 = txtCel.Text.Replace("-", "").Replace("(", "").Replace(")", "");
-                    func.NomeConjunge_Func1 = txtConjunge.Text;
-                    func.Tel_Func1 = txtTel.Text.Replace("-", "").Replace("(", "").Replace(")", "");
-                    if (chbwpp.Checked == true)
-                    {
-                        func.Whatsapp_func1 = 1;
-                    }
-                    else
-                    {
-                        func.Whatsapp_func1 = 0;
-                    }
-                    func.Email_Func1 = txtEmail.Text;
-                    func.Email_Corp_Func1 = txtEmailCorp.Text;
-                    func.Fk_Banco1 = Convert.ToInt32(ddlBanco.SelectedValue.ToString());
-                    func.Fk_Cargo1 = Convert.ToInt32(ddlCargo.SelectedValue.ToString());
-                    func.Num_Agenc_Func1 = txtNumAgenc.Text;
-                    func.Num_Conta_Func1 = txtNumConta.Text;
-                    func.CPF_Func1 = txtCPF.Text.Replace("-", "").Replace(",", "").Replace(".", "");
-
-
-
-
-                    func.Rg_Func1 = txtRG.Text;
-                    func.Dt_Emissao_Func1 = Convert.ToDateTime(txtEmissao.Text);
-                    func.Orgao_Emissor_Func1 = txtEmissor.Text;
-                    func.Reservista_Func1 = txtReservista.Text;
-                    func.Titulo_Eleitor_Func1 = txtTitEleitor.Text;
-                    func.Zona_Eleitoral_Func1 = txtZona.Text;
-                    func.Sessao_Eleitoral_Func1 = txtSessao.Text;
-                    func.Cidade_Eleitoral_Func1 = txtCidVoto.Text;
-                    func.Escolaridade_Func1 = ddlEscolaridade.SelectedItem.ToString();
-                    func.CNS_Func1 = txtCNS.Text;
-                    func.Comprov_Residencia_Func1 = ddlComprRes.SelectedItem.ToString();
-                    func.Fk_Cep1 = Convert.ToInt32(txtidcep.Text);
-                    func.Fk_Dep1 = Convert.ToInt32(ddlDepart.SelectedValue.ToString());
-                    func.IncluirComParametro();
-
-                    PegarFunc();
-
-                    //Envio Foto
-                    arquivos.Caminho_arq = "docspim4semestre/Fotos-Perfil/" + txtMatricula.Text;
-                    arquivos.Tipo_arq = "png"; //alterar para definir automaticamente
-                    arquivos.Tipo_doc_arq = "Foto";
-                    arquivos.St_ativo = 1;
-                    arquivos.Fk_func = Convert.ToInt32(txtFuncProx.Text);
-                    arquivos.IncluirComParametro();
-
-                    MessageBox.Show("Funcionario Cadastrado com Sucesso");
-
-                    AbrirDocumentos(sender, e);
 
                 }
-
+            }
+            else
+            {
+                Application.Exit();
             }
 
-            
         }
 
         private void PegarFunc()
@@ -506,15 +516,77 @@ namespace SisRH.Telas_Cadastro
 
         }
 
+       
+
+
+        private void Fechar(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Você deseja realmente fechar o Sistema?", "SisRH", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+
+            }
+        }
+
+        private void picHome_MouseEnter(object sender, EventArgs e)
+        {
+            picHome.Image = Resources.home__1_;
+
+        }
+        private void picHome_MouseLeave(object sender, EventArgs e)
+        {
+            picHome.Image = Resources.home__2_;
+
+        }
+
+        private void picOn_MouseEnter(object sender, EventArgs e)
+        {
+            pcOn.Image = Resources.power_on__2_;
+
+        }
+        private void picOn_MouseLeave(object sender, EventArgs e)
+        {
+            pcOn.Image = Resources.power_on__3_;
+
+        }
+
         private void AbrirDocumentos(Object sender, EventArgs e)
         {
-            Telas_Cadastro.CadastroDocs docs = new CadastroDocs();
-            docs.lblPront.Text = txtMatricula.Text.Trim();
-            docs.lblFunc.Text = txtPriNome.Text;
-            docs.txtMatricula.Text = txtMatricula.Text;
-            Hide();
-            docs.Show();
+            MessageBox.Show("Finalize o cadastro do Funcionario para cadastrar os documentos");
 
+        }
+        private void AbrirHome(Object sender, EventArgs e)
+        {
+            SisRH.Menu menu = new SisRH.Menu();
+            Hide();
+            menu.Show();
+
+        }
+        private void btnCad_Enter(object sender, EventArgs e)
+        {
+            button5.ForeColor = Color.Black;
+            button5.BackColor = Color.FromArgb(28, 218, 255);
+        }
+        private void btnCad_Leave(object sender, EventArgs e)
+        {
+            button5.ForeColor = Color.FromArgb(28, 218, 255);
+            button5.BackColor = Color.Transparent;
+        }
+
+        private void btnCanc_Enter(object sender, EventArgs e)
+        {
+            button2.ForeColor = Color.White;
+            button2.BackColor = Color.DarkRed;
+        }
+        private void btnCanc_Leave(object sender, EventArgs e)
+        {
+            button2.ForeColor = Color.DarkRed;
+            button2.BackColor = Color.Transparent;
         }
 
         private void panel8_Paint(object sender, PaintEventArgs e)

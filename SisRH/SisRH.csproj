@@ -261,6 +261,13 @@
     <None Include="Resources\power-on %282%29.png" />
     <None Include="Resources\home.png" />
     <None Include="Resources\setting.png" />
+    <None Include="Resources\home %282%29.png" />
+    <None Include="Resources\home %281%29.png" />
+    <None Include="Resources\candidate.png" />
+    <None Include="Resources\candidate %281%29.png" />
+    <None Include="Resources\candidate %282%29.png" />
+    <None Include="Resources\find-option.png" />
+    <None Include="Resources\pencil.png" />
     <Content Include="Resources\switch %282%29.png" />
     <None Include="Resources\visibility.png" />
     <None Include="Resources\switch %282%291.png" />

@@ -191,6 +191,8 @@
             this.picFoto = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.btnLogar = new System.Windows.Forms.Button();
+            this.picHome = new System.Windows.Forms.PictureBox();
+            this.pcOn = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -207,6 +209,8 @@
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcOn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -279,6 +283,8 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.panel8.Controls.Add(this.picHome);
+            this.panel8.Controls.Add(this.pcOn);
             this.panel8.Controls.Add(this.label1);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
@@ -2121,6 +2127,32 @@
             this.btnLogar.UseVisualStyleBackColor = true;
             this.btnLogar.Click += new System.EventHandler(this.SelecionarFotoButton_Click);
             // 
+            // picHome
+            // 
+            this.picHome.Image = global::SisRH.Properties.Resources.home__2_;
+            this.picHome.Location = new System.Drawing.Point(956, 4);
+            this.picHome.Name = "picHome";
+            this.picHome.Size = new System.Drawing.Size(34, 32);
+            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHome.TabIndex = 34;
+            this.picHome.TabStop = false;
+            this.picHome.Click += new System.EventHandler(this.AbrirHome);
+            this.picHome.MouseEnter += new System.EventHandler(this.picHome_MouseEnter);
+            this.picHome.MouseLeave += new System.EventHandler(this.picHome_MouseLeave);
+            // 
+            // pcOn
+            // 
+            this.pcOn.Image = global::SisRH.Properties.Resources.power_on__3_;
+            this.pcOn.Location = new System.Drawing.Point(1016, 4);
+            this.pcOn.Name = "pcOn";
+            this.pcOn.Size = new System.Drawing.Size(34, 32);
+            this.pcOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcOn.TabIndex = 33;
+            this.pcOn.TabStop = false;
+            this.pcOn.Click += new System.EventHandler(this.Fechar);
+            this.pcOn.MouseEnter += new System.EventHandler(this.picOn_MouseEnter);
+            this.pcOn.MouseLeave += new System.EventHandler(this.picOn_MouseLeave);
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
@@ -2135,6 +2167,9 @@
             this.button2.TabIndex = 33;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.AbrirHome);
+            this.button2.MouseEnter += new System.EventHandler(this.btnCanc_Enter);
+            this.button2.MouseLeave += new System.EventHandler(this.btnCanc_Leave);
             // 
             // button5
             // 
@@ -2151,6 +2186,8 @@
             this.button5.Text = "Cadastrar Funcionario";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.CadastrarFuncionario);
+            this.button5.MouseEnter += new System.EventHandler(this.btnCad_Enter);
+            this.button5.MouseLeave += new System.EventHandler(this.btnCad_Leave);
             // 
             // button1
             // 
@@ -2181,7 +2218,7 @@
             this.button3.TabIndex = 28;
             this.button3.Text = "Documentos";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.groupBox6_Enter);
+            this.button3.Click += new System.EventHandler(this.AbrirDocumentos);
             // 
             // pictureBox1
             // 
@@ -2234,6 +2271,8 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcOn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -2409,5 +2448,7 @@
         private System.Windows.Forms.Panel panel58;
         private System.Windows.Forms.TextBox txtCidade1;
         public System.Windows.Forms.TextBox txtMatricula;
+        private System.Windows.Forms.PictureBox pcOn;
+        private System.Windows.Forms.PictureBox picHome;
     }
 }
