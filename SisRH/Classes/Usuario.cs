@@ -18,10 +18,17 @@ namespace SisRH.Classes
         private int Codigo;
         private string Usu;
         private string Senha;
+        private int fkfunc;
+        private byte TrocaSenha;
 
         public int Codigo1 { get => Codigo; set => Codigo = value; }
         public string Usu1 { get => Usu; set => Usu = value; }
         public string Senha1 { get => Senha; set => Senha = value; }
+        public int Fkfunc { get => fkfunc; set => fkfunc = value; }
+        public int NivelAcesso { get => nivelAcesso; set => nivelAcesso = value; }
+        public byte TrocaSenha1 { get => TrocaSenha; set => TrocaSenha = value; }
+
+        private int nivelAcesso;
 
         public bool Logar()
         {
@@ -40,6 +47,29 @@ namespace SisRH.Classes
                     return false;
                 }
                      
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public void IncluirComParametro()
+        {
+            try
+            {
+                SqlParameter[] listaComParametros = {
+
+                   new SqlParameter("@fkfunc",SqlDbType.Int) {Value = Fkfunc},
+                   new SqlParameter("@nivelacesso",SqlDbType.Int) {Value = NivelAcesso},
+                   new SqlParameter("@trocasenha",SqlDbType.Bit) {Value = 1},
+                 
+
+                };
+
+                instrucaoSql = "INSERT INTO tbLogin(fk_func,nivel_Acesso_login,TrocaSenha) VALUES (@fkfunc,@nivelacesso,@trocasenha)";
+                c.ExecutarComandoParametro(instrucaoSql, listaComParametros);
             }
             catch (Exception ex)
             {

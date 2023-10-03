@@ -274,7 +274,7 @@ namespace SisRH.Telas_Cadastro
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
-            string objectKey = "Fotos-Perfil/"+txtMatricula.Text; // Substitua pelo nome desejado para a foto no S3, incluindo a extensão
+            string objectKey = "Fotos-Perfil/" + txtMatricula.Text; // Substitua pelo nome desejado para a foto no S3, incluindo a extensão
 
             using (var fileStream = new FileStream(caminhoLocalDaFoto, FileMode.Open))
             {
@@ -343,6 +343,7 @@ namespace SisRH.Telas_Cadastro
             Classes.Funcionario func = new Classes.Funcionario();
             Classes.Arquivos arquivos = new Classes.Arquivos();
             Classes.ValidaCPF cpf = new Classes.ValidaCPF();
+            Classes.Usuario usu = new Classes.Usuario();
 
 
             DialogResult resultado = MessageBox.Show("Você deseja realmente cadastar o funcionario?", "SisRH", MessageBoxButtons.YesNo);
@@ -438,9 +439,13 @@ namespace SisRH.Telas_Cadastro
                         arquivos.Fk_func = Convert.ToInt32(txtFuncProx.Text);
                         arquivos.IncluirComParametro();
 
+                        usu.Fkfunc = Convert.ToInt32(txtFuncProx.Text);
+                        usu.NivelAcesso = 1;
+                        usu.IncluirComParametro();
+
                         MessageBox.Show("Funcionario Cadastrado com Sucesso");
 
-                        AbrirDocumentos(sender, e);
+                        AbrirDocumentosFim(sender, e);
 
                     }
 
@@ -558,6 +563,14 @@ namespace SisRH.Telas_Cadastro
         private void AbrirDocumentos(Object sender, EventArgs e)
         {
             MessageBox.Show("Finalize o cadastro do Funcionario para cadastrar os documentos");
+
+        }
+        private void AbrirDocumentosFim(Object sender, EventArgs e)
+        {
+            SisRH.Telas_Cadastro.CadastroDocs docs = new CadastroDocs();
+            Hide();
+            docs.Show();
+
 
         }
         private void AbrirHome(Object sender, EventArgs e)

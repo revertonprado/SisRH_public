@@ -17,8 +17,8 @@ namespace SisRH
         public Menu()
         {
             InitializeComponent();
-            monthCalendar1.TitleBackColor = Color.FromArgb(16, 16, 16);
-            monthCalendar1.TitleForeColor = Color.FromArgb(28, 218, 255);
+
+        
 
         }
 
@@ -36,7 +36,13 @@ namespace SisRH
             pcOn.Image = Resources.power_on__3_;
 
         }
-       
+        private void AbrirCadFunc(Object sender, EventArgs e)
+        {
+            SisRH.Telas_Cadastro.CadastroFuncionario func = new Telas_Cadastro.CadastroFuncionario();
+            Hide();
+            func.Show();
+
+        }
 
         private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
         {
