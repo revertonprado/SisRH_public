@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 using System.Data.SqlTypes;
+using System.Security.Cryptography;
 
 namespace SisRH.Classes
 {
@@ -21,7 +22,8 @@ namespace SisRH.Classes
         string PrimeroNome_Func;
         string NomeConjunge_Func;
         int Matricula_Func;
-        DateTime Data_Nasc_Func;
+        DateTime? Data_Nasc_Func;
+        int Data_Nasc_FuncInt;
         byte Sexo_Func;
         string Raca_Func;
         string Tipo_Sang_Func;
@@ -60,13 +62,14 @@ namespace SisRH.Classes
         string Nacionalidade_Func;
         int St_Status_Func;
         int Fk_Dep;
+        string Jornada_Func;
 
         public string Sobrenome_Func1 { get => Sobrenome_Func; set => Sobrenome_Func = value; }
         public string UltimoNome_Func1 { get => UltimoNome_Func; set => UltimoNome_Func = value; }
         public string PrimeroNome_Func1 { get => PrimeroNome_Func; set => PrimeroNome_Func = value; }
         public string NomeConjunge_Func1 { get => NomeConjunge_Func; set => NomeConjunge_Func = value; }
         public int Matricula_Func1 { get => Matricula_Func; set => Matricula_Func = value; }
-        public DateTime Data_Nasc_Func1 { get => Data_Nasc_Func; set => Data_Nasc_Func = value; }
+        
         public byte Sexo_Func1 { get => Sexo_Func; set => Sexo_Func = value; }
         public string Raca_Func1 { get => Raca_Func; set => Raca_Func = value; }
         public string Tipo_Sang_Func1 { get => Tipo_Sang_Func; set => Tipo_Sang_Func = value; }
@@ -105,6 +108,9 @@ namespace SisRH.Classes
         public string Nacionalidade_Func1 { get => Nacionalidade_Func; set => Nacionalidade_Func = value; }
         public int St_Status_Func1 { get => St_Status_Func; set => St_Status_Func = value; }
         public int Fk_Dep1 { get => Fk_Dep; set => Fk_Dep = value; }
+        public int Data_Nasc_FuncInt1 { get => Data_Nasc_FuncInt; set => Data_Nasc_FuncInt = value; }
+        public string Jornada_Func1 { get => Jornada_Func; set => Jornada_Func = value; }
+        public DateTime? Data_Nasc_Func1 { get => Data_Nasc_Func; set => Data_Nasc_Func = value; }
 
         public void IncluirComParametro()
         {
@@ -198,7 +204,20 @@ namespace SisRH.Classes
         }
 
 
+        public DataSet ListarFunc()
+        {
+            try
+            {
+                instrucaoSql = "EXEC ListarFunc_Select '" + Matricula_Func1 + "', '" + PrimeroNome_Func1 + "','" + CPF_Func1 + "','" + Data_Nasc_Func1 + "','" + Data_Nasc_FuncInt1 + "','" + Fk_Cargo1 + "','" + Fk_Dep1 +"','" + Jornada_Func1 + "'";
+                return c.RetornarDataSet(instrucaoSql);
 
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
 
 
 

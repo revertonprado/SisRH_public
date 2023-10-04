@@ -98,6 +98,12 @@
     <Compile Include="Telas Cadastro\CadastroFuncionario.Designer.cs">
       <DependentUpon>CadastroFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas Consulta\ConsultaFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Consulta\ConsultaFunc.Designer.cs">
+      <DependentUpon>ConsultaFunc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas exemplo\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas Cadastro\CadastroFuncionario.resx">
       <DependentUpon>CadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Consulta\ConsultaFunc.resx">
+      <DependentUpon>ConsultaFunc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas exemplo\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
