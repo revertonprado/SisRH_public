@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SisRH.Properties;
 using System.Data.SqlClient;
+using SisRH.Classes;
 
 namespace SisRH
 {
@@ -34,9 +35,8 @@ namespace SisRH
             u.Senha1 = txtSenha.Text;
             if (u.Logar() == true)
             {
-                
+                Session.Instance.IniciarSessao(txtUsuario.Text);
                 SisRH.Menu m = new SisRH.Menu();
-                m.label13.Text = txtUsuario.Text;
                 Hide();
                 m.Show();
                 

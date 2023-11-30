@@ -113,6 +113,16 @@ namespace SisRH.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap audit {
+            get {
+                object obj = ResourceManager.GetObject("audit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap candidate {
             get {
                 object obj = ResourceManager.GetObject("candidate", resourceCulture);
@@ -373,6 +383,36 @@ namespace SisRH.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mobile_payment {
+            get {
+                object obj = ResourceManager.GetObject("mobile-payment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap note {
+            get {
+                object obj = ResourceManager.GetObject("note", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap note__1_ {
+            get {
+                object obj = ResourceManager.GetObject("note (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nova_logo_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("nova_logo-removebg-preview", resourceCulture);
@@ -423,6 +463,26 @@ namespace SisRH.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap payment_method {
+            get {
+                object obj = ResourceManager.GetObject("payment-method", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap payment_method__1_ {
+            get {
+                object obj = ResourceManager.GetObject("payment-method (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pencil {
             get {
                 object obj = ResourceManager.GetObject("pencil", resourceCulture);
@@ -466,6 +526,26 @@ namespace SisRH.Properties {
         internal static System.Drawing.Bitmap power_on__3_ {
             get {
                 object obj = ResourceManager.GetObject("power-on (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap research__1_ {
+            get {
+                object obj = ResourceManager.GetObject("research (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap research__2_ {
+            get {
+                object obj = ResourceManager.GetObject("research (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

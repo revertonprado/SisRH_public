@@ -427,6 +427,7 @@ namespace SisRH.Telas_Cadastro
                         func.Comprov_Residencia_Func1 = ddlComprRes.SelectedItem.ToString();
                         func.Fk_Cep1 = Convert.ToInt32(txtidcep.Text);
                         func.Fk_Dep1 = Convert.ToInt32(ddlDepart.SelectedValue.ToString());
+                        func.Jornada_Func1 = ddlJornada.SelectedItem.ToString();
                         func.IncluirComParametro();
 
                         PegarFunc();

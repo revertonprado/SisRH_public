@@ -30,12 +30,18 @@
         {
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.lblFunc = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.picFoto = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.lblFunc = new System.Windows.Forms.Label();
+            this.picHome = new System.Windows.Forms.PictureBox();
+            this.pcOn = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -45,82 +51,76 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.lblcpf = new System.Windows.Forms.Label();
+            this.picCPF = new System.Windows.Forms.PictureBox();
+            this.btnLogar = new System.Windows.Forms.Button();
             this.panelrcpf = new System.Windows.Forms.Panel();
             this.panelrg = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.lblrg = new System.Windows.Forms.Label();
+            this.picRG = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.panelnasc = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.certnascimento = new System.Windows.Forms.Label();
+            this.picNasc = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.certcas = new System.Windows.Forms.Panel();
             this.panel = new System.Windows.Forms.Panel();
             this.certcasamento = new System.Windows.Forms.Label();
-            this.panel21 = new System.Windows.Forms.Panel();
+            this.picCasam = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.panelReservista = new System.Windows.Forms.Panel();
+            this.AAA = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.picReserv = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
             this.panelCTPS = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.picCTPS = new System.Windows.Forms.PictureBox();
+            this.button9 = new System.Windows.Forms.Button();
             this.panelEscolaridade = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.PICEscolaridade = new System.Windows.Forms.PictureBox();
+            this.button10 = new System.Windows.Forms.Button();
             this.PanelComprovRes = new System.Windows.Forms.Panel();
             this.panel29 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtMatricula = new System.Windows.Forms.TextBox();
             this.picCompRes = new System.Windows.Forms.PictureBox();
             this.button11 = new System.Windows.Forms.Button();
-            this.PICEscolaridade = new System.Windows.Forms.PictureBox();
-            this.button10 = new System.Windows.Forms.Button();
-            this.picCTPS = new System.Windows.Forms.PictureBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.picReserv = new System.Windows.Forms.PictureBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.picCasam = new System.Windows.Forms.PictureBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.picNasc = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.picRG = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.picCPF = new System.Windows.Forms.PictureBox();
-            this.btnLogar = new System.Windows.Forms.Button();
-            this.pcOn = new System.Windows.Forms.PictureBox();
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.picFoto = new System.Windows.Forms.PictureBox();
-            this.picHome = new System.Windows.Forms.PictureBox();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcOn)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPF)).BeginInit();
             this.panelrcpf.SuspendLayout();
             this.panelrg.SuspendLayout();
             this.panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picRG)).BeginInit();
             this.panelnasc.SuspendLayout();
             this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNasc)).BeginInit();
             this.certcas.SuspendLayout();
             this.panel.SuspendLayout();
-            this.panel21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCasam)).BeginInit();
             this.panelReservista.SuspendLayout();
+            this.AAA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picReserv)).BeginInit();
             this.panelCTPS.SuspendLayout();
             this.panel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCTPS)).BeginInit();
             this.panelEscolaridade.SuspendLayout();
             this.panel27.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PICEscolaridade)).BeginInit();
             this.PanelComprovRes.SuspendLayout();
             this.panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCompRes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PICEscolaridade)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCTPS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picReserv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCasam)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNasc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picRG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcOn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             this.SuspendLayout();
             // 
             // panel7
@@ -149,6 +149,18 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(198, 2);
             this.panel13.TabIndex = 36;
+            // 
+            // lblFunc
+            // 
+            this.lblFunc.AutoSize = true;
+            this.lblFunc.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFunc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.lblFunc.Location = new System.Drawing.Point(56, 176);
+            this.lblFunc.Name = "lblFunc";
+            this.lblFunc.Size = new System.Drawing.Size(80, 16);
+            this.lblFunc.TabIndex = 19;
+            this.lblFunc.Text = "Nome Func";
+            this.lblFunc.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel2
             // 
@@ -184,6 +196,65 @@
             this.panel3.Size = new System.Drawing.Size(2, 690);
             this.panel3.TabIndex = 34;
             // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCadastrar.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.btnCadastrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.btnCadastrar.Location = new System.Drawing.Point(10, 627);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(184, 55);
+            this.btnCadastrar.TabIndex = 32;
+            this.btnCadastrar.Text = "Finalizar Documentos";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.MouseEnter += new System.EventHandler(this.btnCad_Enter);
+            this.btnCadastrar.MouseLeave += new System.EventHandler(this.btnCad_Leave);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.button1.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(9, 211);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 55);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Dados Pessoais";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.button3.Location = new System.Drawing.Point(9, 281);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(184, 55);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "Documentos";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.AbrirDadosFunc);
+            // 
+            // picFoto
+            // 
+            this.picFoto.Image = global::SisRH.Properties.Resources.nova_logo_removebg_preview;
+            this.picFoto.Location = new System.Drawing.Point(9, 7);
+            this.picFoto.Name = "picFoto";
+            this.picFoto.Size = new System.Drawing.Size(182, 166);
+            this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFoto.TabIndex = 6;
+            this.picFoto.TabStop = false;
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
@@ -199,17 +270,31 @@
             this.panel8.Size = new System.Drawing.Size(1048, 39);
             this.panel8.TabIndex = 20;
             // 
-            // lblFunc
+            // picHome
             // 
-            this.lblFunc.AutoSize = true;
-            this.lblFunc.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFunc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.lblFunc.Location = new System.Drawing.Point(56, 176);
-            this.lblFunc.Name = "lblFunc";
-            this.lblFunc.Size = new System.Drawing.Size(80, 16);
-            this.lblFunc.TabIndex = 19;
-            this.lblFunc.Text = "Nome Func";
-            this.lblFunc.Click += new System.EventHandler(this.label2_Click);
+            this.picHome.Image = global::SisRH.Properties.Resources.home__2_;
+            this.picHome.Location = new System.Drawing.Point(967, 5);
+            this.picHome.Name = "picHome";
+            this.picHome.Size = new System.Drawing.Size(34, 32);
+            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHome.TabIndex = 35;
+            this.picHome.TabStop = false;
+            this.picHome.Click += new System.EventHandler(this.AbrirHome);
+            this.picHome.MouseEnter += new System.EventHandler(this.picHome_MouseEnter);
+            this.picHome.MouseLeave += new System.EventHandler(this.picHome_MouseLeave);
+            // 
+            // pcOn
+            // 
+            this.pcOn.Image = global::SisRH.Properties.Resources.power_on__3_;
+            this.pcOn.Location = new System.Drawing.Point(1007, 5);
+            this.pcOn.Name = "pcOn";
+            this.pcOn.Size = new System.Drawing.Size(34, 32);
+            this.pcOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcOn.TabIndex = 32;
+            this.pcOn.TabStop = false;
+            this.pcOn.Click += new System.EventHandler(this.Fechar);
+            this.pcOn.MouseEnter += new System.EventHandler(this.picOn_MouseEnter);
+            this.pcOn.MouseLeave += new System.EventHandler(this.picOn_MouseLeave);
             // 
             // panel11
             // 
@@ -296,6 +381,30 @@
             this.lblcpf.TabIndex = 28;
             this.lblcpf.Text = "CPF";
             // 
+            // picCPF
+            // 
+            this.picCPF.Location = new System.Drawing.Point(3, 37);
+            this.picCPF.Name = "picCPF";
+            this.picCPF.Size = new System.Drawing.Size(214, 195);
+            this.picCPF.TabIndex = 27;
+            this.picCPF.TabStop = false;
+            // 
+            // btnLogar
+            // 
+            this.btnLogar.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogar.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.btnLogar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLogar.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.btnLogar.Location = new System.Drawing.Point(3, 238);
+            this.btnLogar.Name = "btnLogar";
+            this.btnLogar.Size = new System.Drawing.Size(214, 33);
+            this.btnLogar.TabIndex = 26;
+            this.btnLogar.Text = "Upload";
+            this.btnLogar.UseVisualStyleBackColor = true;
+            this.btnLogar.Click += new System.EventHandler(this.SelecionarCPF);
+            // 
             // panelrcpf
             // 
             this.panelrcpf.BackColor = System.Drawing.Color.Firebrick;
@@ -336,6 +445,30 @@
             this.lblrg.TabIndex = 29;
             this.lblrg.Text = "RG";
             // 
+            // picRG
+            // 
+            this.picRG.Location = new System.Drawing.Point(3, 38);
+            this.picRG.Name = "picRG";
+            this.picRG.Size = new System.Drawing.Size(214, 195);
+            this.picRG.TabIndex = 28;
+            this.picRG.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button4.Location = new System.Drawing.Point(3, 238);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(214, 33);
+            this.button4.TabIndex = 26;
+            this.button4.Text = "Upload";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.SelecionarRG);
+            // 
             // panelnasc
             // 
             this.panelnasc.BackColor = System.Drawing.Color.Firebrick;
@@ -366,6 +499,30 @@
             this.certnascimento.Size = new System.Drawing.Size(167, 23);
             this.certnascimento.TabIndex = 30;
             this.certnascimento.Text = "Cert Nascimento";
+            // 
+            // picNasc
+            // 
+            this.picNasc.Location = new System.Drawing.Point(4, 36);
+            this.picNasc.Name = "picNasc";
+            this.picNasc.Size = new System.Drawing.Size(214, 196);
+            this.picNasc.TabIndex = 28;
+            this.picNasc.TabStop = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button6.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button6.Location = new System.Drawing.Point(3, 238);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(214, 33);
+            this.button6.TabIndex = 26;
+            this.button6.Text = "Upload";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.SelecionarNasc);
             // 
             // certcas
             // 
@@ -398,25 +555,49 @@
             this.certcasamento.TabIndex = 31;
             this.certcasamento.Text = "Cert Casamento";
             // 
-            // panel21
+            // picCasam
             // 
-            this.panel21.BackColor = System.Drawing.Color.Firebrick;
-            this.panel21.Controls.Add(this.panelReservista);
-            this.panel21.Location = new System.Drawing.Point(231, 372);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(222, 276);
-            this.panel21.TabIndex = 37;
+            this.picCasam.Location = new System.Drawing.Point(3, 35);
+            this.picCasam.Name = "picCasam";
+            this.picCasam.Size = new System.Drawing.Size(214, 197);
+            this.picCasam.TabIndex = 28;
+            this.picCasam.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button7.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button7.Location = new System.Drawing.Point(3, 238);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(214, 33);
+            this.button7.TabIndex = 26;
+            this.button7.Text = "Upload";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.SelecionarCas);
             // 
             // panelReservista
             // 
-            this.panelReservista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.panelReservista.Controls.Add(this.label9);
-            this.panelReservista.Controls.Add(this.picReserv);
-            this.panelReservista.Controls.Add(this.button8);
-            this.panelReservista.Location = new System.Drawing.Point(1, 1);
+            this.panelReservista.BackColor = System.Drawing.Color.Firebrick;
+            this.panelReservista.Controls.Add(this.AAA);
+            this.panelReservista.Location = new System.Drawing.Point(231, 372);
             this.panelReservista.Name = "panelReservista";
-            this.panelReservista.Size = new System.Drawing.Size(220, 274);
-            this.panelReservista.TabIndex = 23;
+            this.panelReservista.Size = new System.Drawing.Size(222, 276);
+            this.panelReservista.TabIndex = 37;
+            // 
+            // AAA
+            // 
+            this.AAA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.AAA.Controls.Add(this.label9);
+            this.AAA.Controls.Add(this.picReserv);
+            this.AAA.Controls.Add(this.button8);
+            this.AAA.Location = new System.Drawing.Point(1, 1);
+            this.AAA.Name = "AAA";
+            this.AAA.Size = new System.Drawing.Size(220, 274);
+            this.AAA.TabIndex = 23;
             // 
             // label9
             // 
@@ -428,6 +609,30 @@
             this.label9.Size = new System.Drawing.Size(108, 23);
             this.label9.TabIndex = 29;
             this.label9.Text = "Reservista";
+            // 
+            // picReserv
+            // 
+            this.picReserv.Location = new System.Drawing.Point(3, 36);
+            this.picReserv.Name = "picReserv";
+            this.picReserv.Size = new System.Drawing.Size(214, 196);
+            this.picReserv.TabIndex = 28;
+            this.picReserv.TabStop = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button8.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button8.Location = new System.Drawing.Point(3, 238);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(214, 33);
+            this.button8.TabIndex = 26;
+            this.button8.Text = "Upload";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.SelecionarRes);
             // 
             // panelCTPS
             // 
@@ -460,6 +665,30 @@
             this.label10.TabIndex = 29;
             this.label10.Text = "CTPS";
             // 
+            // picCTPS
+            // 
+            this.picCTPS.Location = new System.Drawing.Point(2, 35);
+            this.picCTPS.Name = "picCTPS";
+            this.picCTPS.Size = new System.Drawing.Size(214, 197);
+            this.picCTPS.TabIndex = 28;
+            this.picCTPS.TabStop = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Transparent;
+            this.button9.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button9.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button9.Location = new System.Drawing.Point(3, 238);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(214, 33);
+            this.button9.TabIndex = 26;
+            this.button9.Text = "Upload";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.SelecionarCTPS);
+            // 
             // panelEscolaridade
             // 
             this.panelEscolaridade.BackColor = System.Drawing.Color.Firebrick;
@@ -490,6 +719,30 @@
             this.label11.Size = new System.Drawing.Size(131, 23);
             this.label11.TabIndex = 30;
             this.label11.Text = "Escolaridade";
+            // 
+            // PICEscolaridade
+            // 
+            this.PICEscolaridade.Location = new System.Drawing.Point(3, 36);
+            this.PICEscolaridade.Name = "PICEscolaridade";
+            this.PICEscolaridade.Size = new System.Drawing.Size(214, 197);
+            this.PICEscolaridade.TabIndex = 28;
+            this.PICEscolaridade.TabStop = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Transparent;
+            this.button10.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button10.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button10.Location = new System.Drawing.Point(3, 238);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(214, 33);
+            this.button10.TabIndex = 26;
+            this.button10.Text = "Upload";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.SelecionarEscolaridade);
             // 
             // PanelComprovRes
             // 
@@ -522,14 +775,6 @@
             this.label12.TabIndex = 31;
             this.label12.Text = "Comprov Residência";
             // 
-            // txtMatricula
-            // 
-            this.txtMatricula.Location = new System.Drawing.Point(232, 658);
-            this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(100, 20);
-            this.txtMatricula.TabIndex = 37;
-            this.txtMatricula.Visible = false;
-            // 
             // picCompRes
             // 
             this.picCompRes.Location = new System.Drawing.Point(2, 34);
@@ -554,258 +799,13 @@
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.SelecionarComprRes);
             // 
-            // PICEscolaridade
+            // txtMatricula
             // 
-            this.PICEscolaridade.Location = new System.Drawing.Point(3, 36);
-            this.PICEscolaridade.Name = "PICEscolaridade";
-            this.PICEscolaridade.Size = new System.Drawing.Size(214, 197);
-            this.PICEscolaridade.TabIndex = 28;
-            this.PICEscolaridade.TabStop = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.Transparent;
-            this.button10.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button10.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button10.Location = new System.Drawing.Point(3, 238);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(214, 33);
-            this.button10.TabIndex = 26;
-            this.button10.Text = "Upload";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.SelecionarEscolaridade);
-            // 
-            // picCTPS
-            // 
-            this.picCTPS.Location = new System.Drawing.Point(2, 35);
-            this.picCTPS.Name = "picCTPS";
-            this.picCTPS.Size = new System.Drawing.Size(214, 197);
-            this.picCTPS.TabIndex = 28;
-            this.picCTPS.TabStop = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Transparent;
-            this.button9.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button9.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button9.Location = new System.Drawing.Point(3, 238);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(214, 33);
-            this.button9.TabIndex = 26;
-            this.button9.Text = "Upload";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.SelecionarCTPS);
-            // 
-            // picReserv
-            // 
-            this.picReserv.Location = new System.Drawing.Point(3, 36);
-            this.picReserv.Name = "picReserv";
-            this.picReserv.Size = new System.Drawing.Size(214, 196);
-            this.picReserv.TabIndex = 28;
-            this.picReserv.TabStop = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button8.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button8.Location = new System.Drawing.Point(3, 238);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(214, 33);
-            this.button8.TabIndex = 26;
-            this.button8.Text = "Upload";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.SelecionarRes);
-            // 
-            // picCasam
-            // 
-            this.picCasam.Location = new System.Drawing.Point(3, 35);
-            this.picCasam.Name = "picCasam";
-            this.picCasam.Size = new System.Drawing.Size(214, 197);
-            this.picCasam.TabIndex = 28;
-            this.picCasam.TabStop = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button7.Location = new System.Drawing.Point(3, 238);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(214, 33);
-            this.button7.TabIndex = 26;
-            this.button7.Text = "Upload";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.SelecionarCas);
-            // 
-            // picNasc
-            // 
-            this.picNasc.Location = new System.Drawing.Point(4, 36);
-            this.picNasc.Name = "picNasc";
-            this.picNasc.Size = new System.Drawing.Size(214, 196);
-            this.picNasc.TabIndex = 28;
-            this.picNasc.TabStop = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button6.Location = new System.Drawing.Point(3, 238);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(214, 33);
-            this.button6.TabIndex = 26;
-            this.button6.Text = "Upload";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.SelecionarNasc);
-            // 
-            // picRG
-            // 
-            this.picRG.Location = new System.Drawing.Point(3, 38);
-            this.picRG.Name = "picRG";
-            this.picRG.Size = new System.Drawing.Size(214, 195);
-            this.picRG.TabIndex = 28;
-            this.picRG.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button4.Location = new System.Drawing.Point(3, 238);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(214, 33);
-            this.button4.TabIndex = 26;
-            this.button4.Text = "Upload";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.SelecionarRG);
-            // 
-            // picCPF
-            // 
-            this.picCPF.Location = new System.Drawing.Point(3, 37);
-            this.picCPF.Name = "picCPF";
-            this.picCPF.Size = new System.Drawing.Size(214, 195);
-            this.picCPF.TabIndex = 27;
-            this.picCPF.TabStop = false;
-            // 
-            // btnLogar
-            // 
-            this.btnLogar.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogar.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.btnLogar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnLogar.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.btnLogar.Location = new System.Drawing.Point(3, 238);
-            this.btnLogar.Name = "btnLogar";
-            this.btnLogar.Size = new System.Drawing.Size(214, 33);
-            this.btnLogar.TabIndex = 26;
-            this.btnLogar.Text = "Upload";
-            this.btnLogar.UseVisualStyleBackColor = true;
-            this.btnLogar.Click += new System.EventHandler(this.SelecionarCPF);
-            // 
-            // pcOn
-            // 
-            this.pcOn.Image = global::SisRH.Properties.Resources.power_on__3_;
-            this.pcOn.Location = new System.Drawing.Point(1007, 5);
-            this.pcOn.Name = "pcOn";
-            this.pcOn.Size = new System.Drawing.Size(34, 32);
-            this.pcOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcOn.TabIndex = 32;
-            this.pcOn.TabStop = false;
-            this.pcOn.Click += new System.EventHandler(this.Fechar);
-            this.pcOn.MouseEnter += new System.EventHandler(this.picOn_MouseEnter);
-            this.pcOn.MouseLeave += new System.EventHandler(this.picOn_MouseLeave);
-            // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCadastrar.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.btnCadastrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.btnCadastrar.Location = new System.Drawing.Point(10, 627);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(184, 55);
-            this.btnCadastrar.TabIndex = 32;
-            this.btnCadastrar.Text = "Finalizar Documentos";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.MouseEnter += new System.EventHandler(this.btnCad_Enter);
-            this.btnCadastrar.MouseLeave += new System.EventHandler(this.btnCad_Leave);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.button1.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(9, 211);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 55);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Dados Pessoais";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(9, 281);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(184, 55);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "Documentos";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.AbrirDadosFunc);
-            // 
-            // picFoto
-            // 
-            this.picFoto.Image = global::SisRH.Properties.Resources.nova_logo_removebg_preview;
-            this.picFoto.Location = new System.Drawing.Point(9, 7);
-            this.picFoto.Name = "picFoto";
-            this.picFoto.Size = new System.Drawing.Size(182, 166);
-            this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picFoto.TabIndex = 6;
-            this.picFoto.TabStop = false;
-            // 
-            // picHome
-            // 
-            this.picHome.Image = global::SisRH.Properties.Resources.home__2_;
-            this.picHome.Location = new System.Drawing.Point(949, 5);
-            this.picHome.Name = "picHome";
-            this.picHome.Size = new System.Drawing.Size(34, 32);
-            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picHome.TabIndex = 35;
-            this.picHome.TabStop = false;
-            this.picHome.Click += new System.EventHandler(this.AbrirHome);
-            this.picHome.MouseEnter += new System.EventHandler(this.picHome_MouseEnter);
-            this.picHome.MouseLeave += new System.EventHandler(this.picHome_MouseLeave);
+            this.txtMatricula.Location = new System.Drawing.Point(232, 658);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(100, 20);
+            this.txtMatricula.TabIndex = 37;
+            this.txtMatricula.Visible = false;
             // 
             // CadastroDocs
             // 
@@ -817,7 +817,7 @@
             this.Controls.Add(this.PanelComprovRes);
             this.Controls.Add(this.panelEscolaridade);
             this.Controls.Add(this.panelCTPS);
-            this.Controls.Add(this.panel21);
+            this.Controls.Add(this.panelReservista);
             this.Controls.Add(this.certcas);
             this.Controls.Add(this.panelnasc);
             this.Controls.Add(this.panelrg);
@@ -833,44 +833,44 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcOn)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCPF)).EndInit();
             this.panelrcpf.ResumeLayout(false);
             this.panelrg.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picRG)).EndInit();
             this.panelnasc.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNasc)).EndInit();
             this.certcas.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
-            this.panel21.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picCasam)).EndInit();
             this.panelReservista.ResumeLayout(false);
-            this.panelReservista.PerformLayout();
+            this.AAA.ResumeLayout(false);
+            this.AAA.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picReserv)).EndInit();
             this.panelCTPS.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCTPS)).EndInit();
             this.panelEscolaridade.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PICEscolaridade)).EndInit();
             this.PanelComprovRes.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCompRes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PICEscolaridade)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCTPS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picReserv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCasam)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNasc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picRG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCPF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcOn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -908,8 +908,8 @@
         private System.Windows.Forms.Panel certcas;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Panel panelReservista;
+        private System.Windows.Forms.Panel AAA;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel panelCTPS;
         private System.Windows.Forms.Panel panel25;

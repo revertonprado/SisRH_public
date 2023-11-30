@@ -160,11 +160,12 @@ namespace SisRH.Classes
                    new SqlParameter("@nacionalidade",SqlDbType.VarChar) {Value = Nacionalidade_Func1},
                    new SqlParameter("@status",SqlDbType.Int) {Value = 1},
                    new SqlParameter("@fkdep",SqlDbType.Int){Value = Fk_Dep1},
-                   new SqlParameter("@fkcep",SqlDbType.Int){Value = Fk_Cep1}
+                   new SqlParameter("@fkcep",SqlDbType.Int){Value = Fk_Cep1},
+                   new SqlParameter("@jornada",SqlDbType.VarChar){Value = Jornada_Func1}
 
                 };
 
-                instrucaoSql = "INSERT INTO tbFuncionario VALUES (@primeironome ,@sobrenome, @ultimonome, @matricula, @DataNasc, @sexofunc ,@raca, @tiposangue, @nomemae,@nomepai,@estadocivil,@nomeconjunge,@cidadenasc,@numres,@compl,@tipores,@cel,@whatsapp,@tel,@email,@emailcorp,@numagenc,@numconta,@fkcargo,@fkbanco,@cpf,@rg,@dataemissao,@orgaoe,@reservista,@titeleitor,@zonaele,@sessaoele,@cidadeele,@escolaridade,@cns,@certnasc,@certCas,@comprovanteres,@nacionalidade,@status, @fkdep, @fkcep)";
+                instrucaoSql = "INSERT INTO tbFuncionario VALUES (@primeironome ,@sobrenome, @ultimonome, @matricula, @DataNasc, @sexofunc ,@raca, @tiposangue, @nomemae,@nomepai,@estadocivil,@nomeconjunge,@cidadenasc,@numres,@compl,@tipores,@cel,@whatsapp,@tel,@email,@emailcorp,@numagenc,@numconta,@fkcargo,@fkbanco,@cpf,@rg,@dataemissao,@orgaoe,@reservista,@titeleitor,@zonaele,@sessaoele,@cidadeele,@escolaridade,@cns,@certnasc,@certCas,@comprovanteres,@nacionalidade,@status, @fkdep, @fkcep, @jornada)";
                 c.ExecutarComandoParametro(instrucaoSql, listaComParametros);
             }
             catch (Exception ex)

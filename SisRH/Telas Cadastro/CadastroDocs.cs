@@ -164,9 +164,8 @@ namespace SisRH.Telas_Cadastro
                     }
                     catch (Exception ex)
                     {
-
                         throw ex;
-                    }// Execute o código de upload aqui usando o caminho da foto selecionada
+                    }
 
                 }
             }

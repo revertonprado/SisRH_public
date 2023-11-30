@@ -16,7 +16,7 @@ namespace SisRH
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Telas_Consulta.ConsultaFunc());
+            Application.Run(new Login());
         }
     }
 }

@@ -28,24 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pcOn = new System.Windows.Forms.PictureBox();
+            this.picHome = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pcOn = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dgvFunc = new System.Windows.Forms.DataGridView();
-            this.txtMatricula = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.txtNome = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btnLogar = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -63,14 +62,16 @@
             this.panel38 = new System.Windows.Forms.Panel();
             this.ddlJornada = new System.Windows.Forms.ComboBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.picHome = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.btnLogar = new System.Windows.Forms.Button();
+            this.dgvFunc = new System.Windows.Forms.DataGridView();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcOn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFunc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -109,16 +110,6 @@
             this.panel1.Size = new System.Drawing.Size(1260, 2);
             this.panel1.TabIndex = 14;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::SisRH.Properties.Resources.nova_logo_removebg_preview;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(116, 99);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 30;
-            this.pictureBox3.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
@@ -127,7 +118,6 @@
             this.panel5.Controls.Add(this.pictureBox3);
             this.panel5.Controls.Add(this.pcOn);
             this.panel5.Controls.Add(this.label11);
-            this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -136,15 +126,18 @@
             this.panel5.Size = new System.Drawing.Size(1260, 105);
             this.panel5.TabIndex = 17;
             // 
-            // pcOn
+            // picHome
             // 
-            this.pcOn.Image = global::SisRH.Properties.Resources.power_on__3_;
-            this.pcOn.Location = new System.Drawing.Point(1093, 10);
-            this.pcOn.Name = "pcOn";
-            this.pcOn.Size = new System.Drawing.Size(34, 35);
-            this.pcOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcOn.TabIndex = 31;
-            this.pcOn.TabStop = false;
+            this.picHome.Image = global::SisRH.Properties.Resources.home__2_;
+            this.picHome.Location = new System.Drawing.Point(1053, 13);
+            this.picHome.Name = "picHome";
+            this.picHome.Size = new System.Drawing.Size(34, 32);
+            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHome.TabIndex = 35;
+            this.picHome.TabStop = false;
+            this.picHome.Click += new System.EventHandler(this.AbrirHome);
+            this.picHome.MouseEnter += new System.EventHandler(this.picHome_MouseEnter);
+            this.picHome.MouseLeave += new System.EventHandler(this.picHome_MouseLeave);
             // 
             // label13
             // 
@@ -157,6 +150,29 @@
             this.label13.TabIndex = 29;
             this.label13.Text = "Usuario";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SisRH.Properties.Resources.nova_logo_removebg_preview;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(116, 99);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 30;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pcOn
+            // 
+            this.pcOn.Image = global::SisRH.Properties.Resources.power_on__3_;
+            this.pcOn.Location = new System.Drawing.Point(1093, 10);
+            this.pcOn.Name = "pcOn";
+            this.pcOn.Size = new System.Drawing.Size(34, 35);
+            this.pcOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcOn.TabIndex = 31;
+            this.pcOn.TabStop = false;
+            this.pcOn.Click += new System.EventHandler(this.Fechar);
+            this.pcOn.MouseEnter += new System.EventHandler(this.picOn_MouseEnter);
+            this.pcOn.MouseLeave += new System.EventHandler(this.picOn_MouseLeave);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -167,15 +183,6 @@
             this.label11.Size = new System.Drawing.Size(212, 23);
             this.label11.TabIndex = 27;
             this.label11.Text = "Consulta Funcionário";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::SisRH.Properties.Resources.setting;
-            this.pictureBox4.Location = new System.Drawing.Point(1046, 10);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 35);
-            this.pictureBox4.TabIndex = 30;
-            this.pictureBox4.TabStop = false;
             // 
             // label10
             // 
@@ -195,28 +202,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // dgvFunc
-            // 
-            this.dgvFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFunc.Location = new System.Drawing.Point(8, 216);
-            this.dgvFunc.Name = "dgvFunc";
-            this.dgvFunc.Size = new System.Drawing.Size(1244, 501);
-            this.dgvFunc.TabIndex = 18;
-            // 
-            // txtMatricula
-            // 
-            this.txtMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.txtMatricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatricula.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatricula.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtMatricula.Location = new System.Drawing.Point(14, 144);
-            this.txtMatricula.MaxLength = 10;
-            this.txtMatricula.Multiline = true;
-            this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.PasswordChar = '*';
-            this.txtMatricula.Size = new System.Drawing.Size(107, 20);
-            this.txtMatricula.TabIndex = 21;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
@@ -225,20 +210,6 @@
             this.panel6.Size = new System.Drawing.Size(107, 1);
             this.panel6.TabIndex = 20;
             // 
-            // txtNome
-            // 
-            this.txtNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNome.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtNome.Location = new System.Drawing.Point(138, 145);
-            this.txtNome.MaxLength = 10;
-            this.txtNome.Multiline = true;
-            this.txtNome.Name = "txtNome";
-            this.txtNome.PasswordChar = '*';
-            this.txtNome.Size = new System.Drawing.Size(200, 20);
-            this.txtNome.TabIndex = 23;
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
@@ -246,22 +217,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 1);
             this.panel7.TabIndex = 22;
-            // 
-            // btnLogar
-            // 
-            this.btnLogar.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogar.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.btnLogar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnLogar.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.btnLogar.Location = new System.Drawing.Point(1135, 138);
-            this.btnLogar.Name = "btnLogar";
-            this.btnLogar.Size = new System.Drawing.Size(111, 33);
-            this.btnLogar.TabIndex = 26;
-            this.btnLogar.Text = "Pesquisar";
-            this.btnLogar.UseVisualStyleBackColor = true;
-            this.btnLogar.Click += new System.EventHandler(this.Pesquisar);
             // 
             // label27
             // 
@@ -448,17 +403,90 @@
             this.label31.TabIndex = 125;
             this.label31.Text = "Jornada";
             // 
-            // picHome
+            // txtMatricula
             // 
-            this.picHome.Image = global::SisRH.Properties.Resources.home__2_;
-            this.picHome.Location = new System.Drawing.Point(995, 13);
-            this.picHome.Name = "picHome";
-            this.picHome.Size = new System.Drawing.Size(34, 32);
-            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picHome.TabIndex = 35;
-            this.picHome.TabStop = false;
-            this.picHome.MouseEnter += new System.EventHandler(this.picHome_MouseEnter);
-            this.picHome.MouseLeave += new System.EventHandler(this.picHome_MouseLeave);
+            this.txtMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtMatricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMatricula.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatricula.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtMatricula.Location = new System.Drawing.Point(14, 145);
+            this.txtMatricula.MaxLength = 20;
+            this.txtMatricula.Multiline = true;
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(107, 20);
+            this.txtMatricula.TabIndex = 128;
+            // 
+            // txtNome
+            // 
+            this.txtNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNome.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtNome.Location = new System.Drawing.Point(138, 145);
+            this.txtNome.MaxLength = 20;
+            this.txtNome.Multiline = true;
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(200, 20);
+            this.txtNome.TabIndex = 129;
+            // 
+            // btnLogar
+            // 
+            this.btnLogar.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogar.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.btnLogar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLogar.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.btnLogar.Location = new System.Drawing.Point(1135, 138);
+            this.btnLogar.Name = "btnLogar";
+            this.btnLogar.Size = new System.Drawing.Size(111, 33);
+            this.btnLogar.TabIndex = 26;
+            this.btnLogar.Text = "Pesquisar";
+            this.btnLogar.UseVisualStyleBackColor = true;
+            this.btnLogar.Click += new System.EventHandler(this.Pesquisar);
+            // 
+            // dgvFunc
+            // 
+            this.dgvFunc.AllowUserToAddRows = false;
+            this.dgvFunc.AllowUserToDeleteRows = false;
+            this.dgvFunc.AllowUserToResizeColumns = false;
+            this.dgvFunc.AllowUserToResizeRows = false;
+            this.dgvFunc.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.dgvFunc.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dgvFunc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFunc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvFunc.ColumnHeadersHeight = 30;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFunc.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvFunc.EnableHeadersVisualStyles = false;
+            this.dgvFunc.GridColor = System.Drawing.Color.Silver;
+            this.dgvFunc.Location = new System.Drawing.Point(14, 193);
+            this.dgvFunc.Name = "dgvFunc";
+            this.dgvFunc.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Cyan;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFunc.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvFunc.RowHeadersVisible = false;
+            this.dgvFunc.Size = new System.Drawing.Size(1238, 524);
+            this.dgvFunc.TabIndex = 162;
             // 
             // ConsultaFunc
             // 
@@ -466,6 +494,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1264, 729);
+            this.Controls.Add(this.dgvFunc);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.panel38);
             this.Controls.Add(this.ddlJornada);
             this.Controls.Add(this.label31);
@@ -484,11 +515,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.btnLogar);
-            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.dgvFunc);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
@@ -499,14 +527,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultaFunc";
             this.Load += new System.EventHandler(this.ConsultaFunc_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcOn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFunc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -523,13 +550,9 @@
         private System.Windows.Forms.PictureBox pcOn;
         public System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dgvFunc;
-        private System.Windows.Forms.TextBox txtMatricula;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnLogar;
         private System.Windows.Forms.Label label27;
@@ -550,5 +573,8 @@
         private System.Windows.Forms.ComboBox ddlJornada;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.PictureBox picHome;
+        private System.Windows.Forms.TextBox txtMatricula;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.DataGridView dgvFunc;
     }
 }
