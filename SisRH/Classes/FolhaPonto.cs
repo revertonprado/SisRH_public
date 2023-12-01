@@ -75,6 +75,27 @@ namespace SisRH.Classes
             }
         }
 
+        public bool VerificarFolhaPonto(int mes, int ano)
+        {
+            try
+            {
+                instrucaoSql = "select * from tbFolhaPonto where AlterarFolha_fp = 1 and mes_fp = '" + mes + "' and ano_fp = '"+ ano +"'";
+
+                if (c.RetornarDataReader(instrucaoSql).HasRows == false)
+                {
+                    return false;
+                }
+                return true;
+                
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+
         public void UpdateComParametro(int id, TimeSpan e1, TimeSpan e2, TimeSpan e3, TimeSpan s1, TimeSpan s2, TimeSpan s3, string obs)
         {
             try
@@ -89,6 +110,33 @@ namespace SisRH.Classes
             }
         }
 
+        public void FecharFolhaPonto(int mes, int ano)
+        {
+            try
+            {
+                instrucaoSql = "EXEC FecharFolhaPonto'" + mes + "', '" + ano +"'";
+                c.ExecutarComando(instrucaoSql);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public void GerarFolhaPagamento(int mes, int ano)
+        {
+            try
+            {
+                instrucaoSql = "EXEC GerarFolhaPagamentov2'" + mes + "', '" + ano + "'";
+                c.ExecutarComando(instrucaoSql);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
 
 
     }

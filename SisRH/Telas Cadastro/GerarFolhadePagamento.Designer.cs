@@ -35,14 +35,12 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.picFoto = new System.Windows.Forms.PictureBox();
-            this.btnCadastrar = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btnConfirmar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtData = new System.Windows.Forms.TextBox();
-            this.panel18 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -55,6 +53,8 @@
             this.picHome = new System.Windows.Forms.PictureBox();
             this.pcOn = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
@@ -122,7 +122,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.panel7.Controls.Add(this.btnCancelar);
+            this.panel7.Controls.Add(this.button2);
             this.panel7.Controls.Add(this.picFoto);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(2, 2);
@@ -130,20 +130,23 @@
             this.panel7.Size = new System.Drawing.Size(200, 364);
             this.panel7.TabIndex = 40;
             // 
-            // btnCancelar
+            // button2
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancelar.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnCancelar.Location = new System.Drawing.Point(9, 303);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(184, 55);
-            this.btnCancelar.TabIndex = 37;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.DarkRed;
+            this.button2.Location = new System.Drawing.Point(7, 303);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(184, 55);
+            this.button2.TabIndex = 38;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.AbrirHome);
+            this.button2.MouseEnter += new System.EventHandler(this.btnCanc_Enter);
+            this.button2.MouseLeave += new System.EventHandler(this.btnCanc_Leave);
             // 
             // picFoto
             // 
@@ -155,28 +158,13 @@
             this.picFoto.TabIndex = 6;
             this.picFoto.TabStop = false;
             // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCadastrar.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.btnCadastrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.btnCadastrar.Location = new System.Drawing.Point(181, 174);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(184, 55);
-            this.btnCadastrar.TabIndex = 32;
-            this.btnCadastrar.Text = "Gerar Folha Pagamento";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.panel16);
+            this.panel8.Controls.Add(this.txtMatricula);
+            this.panel8.Controls.Add(this.btnConfirmar);
             this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.btnCadastrar);
             this.panel8.Controls.Add(this.label1);
-            this.panel8.Controls.Add(this.txtData);
-            this.panel8.Controls.Add(this.panel18);
             this.panel8.Controls.Add(this.panel14);
             this.panel8.Controls.Add(this.panel13);
             this.panel8.Controls.Add(this.panel4);
@@ -185,6 +173,23 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(561, 258);
             this.panel8.TabIndex = 41;
+            // 
+            // btnConfirmar
+            // 
+            this.btnConfirmar.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfirmar.BackgroundImage = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
+            this.btnConfirmar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.btnConfirmar.Location = new System.Drawing.Point(192, 171);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(184, 55);
+            this.btnConfirmar.TabIndex = 87;
+            this.btnConfirmar.Text = "Gerar Folha Pagamento";
+            this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.MouseEnter += new System.EventHandler(this.btnCad_Enter);
+            this.btnConfirmar.MouseLeave += new System.EventHandler(this.btnCad_Leave);
             // 
             // label2
             // 
@@ -207,28 +212,6 @@
             this.label1.Size = new System.Drawing.Size(463, 23);
             this.label1.TabIndex = 85;
             this.label1.Text = "Deseja realmente gerar a Folha de Pagamento?";
-            // 
-            // txtData
-            // 
-            this.txtData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtData.Enabled = false;
-            this.txtData.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtData.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtData.Location = new System.Drawing.Point(214, 120);
-            this.txtData.MaxLength = 20;
-            this.txtData.Multiline = true;
-            this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(136, 27);
-            this.txtData.TabIndex = 84;
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.panel18.Location = new System.Drawing.Point(215, 147);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(135, 1);
-            this.panel18.TabIndex = 83;
             // 
             // panel14
             // 
@@ -354,6 +337,29 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Geração Folha de Pagamento";
             // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel16.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel16.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel16.Location = new System.Drawing.Point(211, 149);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(155, 1);
+            this.panel16.TabIndex = 90;
+            // 
+            // txtMatricula
+            // 
+            this.txtMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtMatricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMatricula.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatricula.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtMatricula.Location = new System.Drawing.Point(211, 120);
+            this.txtMatricula.Multiline = true;
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(156, 30);
+            this.txtMatricula.TabIndex = 89;
+            this.txtMatricula.TextChanged += new System.EventHandler(this.MudarCorBox);
+            // 
             // GerarFolhadePagamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -396,8 +402,6 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnCadastrar;
         public System.Windows.Forms.PictureBox picFoto;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel14;
@@ -406,8 +410,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel2;
-        public System.Windows.Forms.TextBox txtData;
-        public System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel15;
@@ -416,5 +418,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnConfirmar;
+        private System.Windows.Forms.Panel panel16;
+        public System.Windows.Forms.TextBox txtMatricula;
     }
 }

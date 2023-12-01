@@ -29,7 +29,16 @@ namespace SisRH
         }
         private void Fechar(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult resultado = MessageBox.Show("Você deseja realmente fechar o Sistema?", "SisRH", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+
+            }
         }
         private void picOn_MouseEnter(object sender, EventArgs e)
         {
@@ -53,6 +62,13 @@ namespace SisRH
             SisRH.Telas_Consulta.ConsultaFolhaPonto fp = new SisRH.Telas_Consulta.ConsultaFolhaPonto();
             Hide();
             fp.Show();
+
+        }
+        private void AbrirFolhaPag(Object sender, EventArgs e)
+        {
+            SisRH.Telas_Cadastro.GerarFolhadePagamento gfp = new SisRH.Telas_Cadastro.GerarFolhadePagamento();
+            Hide();
+            gfp.Show();
 
         }
         private void ExibirImagemButton_Click()
@@ -106,6 +122,36 @@ namespace SisRH
                 }
             }
         }
+
+        private void FecharFolhaPonto(object sender, EventArgs e)
+        {
+            Classes.FolhaPonto fp = new FolhaPonto();
+            int ano;
+            int mes;
+
+            ano = DateTime.Now.Year;
+            mes = DateTime.Now.Month;
+
+            if (fp.VerificarFolhaPonto(mes, ano) == true)
+            {
+                DialogResult resultado = MessageBox.Show("Você deseja realmente fechar a Folha Ponto?", +mes+"/"+ano, MessageBoxButtons.YesNo);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    fp.FecharFolhaPonto(mes, ano);
+                }
+                else
+                {
+                    MessageBox.Show("A folha ponto do " + mes + "/" + ano + " foi fechada com sucesso!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("A folha ponto do "+ mes +"/"+ ano +" já está fechada!");
+            }
+            
+        }
+
         private void label8_Click(object sender, EventArgs e)
         {
 
