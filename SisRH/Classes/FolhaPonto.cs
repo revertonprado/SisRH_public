@@ -75,6 +75,21 @@ namespace SisRH.Classes
             }
         }
 
+        public DataSet ListarFolhaPagamento(int func)
+        {
+            try
+            {
+                instrucaoSql = "EXEC ListarFolhaPagamento'" + Mes_fp + "', '" + Ano_fp1 + "','" + func + "'";
+                return c.RetornarDataSet(instrucaoSql);
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
         public bool VerificarFolhaPonto(int mes, int ano)
         {
             try
@@ -94,6 +109,27 @@ namespace SisRH.Classes
                 throw ex;
             }
         }
+
+        public bool VerificarFolhaPagamento(int mes, int ano)
+        {
+            try
+            {
+                instrucaoSql = "select * from FolhaPagamentoCompleta where mes_fpgc = '" + mes + "' and ano_fpgc = '" + ano + "'";
+
+                if (c.RetornarDataReader(instrucaoSql).HasRows == false)
+                {
+                    return false;
+                }
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
 
 
         public void UpdateComParametro(int id, TimeSpan e1, TimeSpan e2, TimeSpan e3, TimeSpan s1, TimeSpan s2, TimeSpan s3, string obs)
@@ -128,7 +164,7 @@ namespace SisRH.Classes
         {
             try
             {
-                instrucaoSql = "EXEC GerarFolhaPagamentov2'" + mes + "', '" + ano + "'";
+                instrucaoSql = "EXEC GerarFolhaPagamentov2'" + ano + "', '" + mes + "'";
                 c.ExecutarComando(instrucaoSql);
             }
             catch (Exception ex)

@@ -57,6 +57,13 @@ namespace SisRH
             func.Show();
 
         }
+        private void AbrirFolhaPagConsulta(Object sender, EventArgs e)
+        {
+            SisRH.Telas_Consulta.ConsultarFolhaPagamento cfp = new Telas_Consulta.ConsultarFolhaPagamento();
+            Hide();
+            cfp.Show();
+
+        }
         private void AbrirConsultaFP(Object sender, EventArgs e)
         {
             SisRH.Telas_Consulta.ConsultaFolhaPonto fp = new SisRH.Telas_Consulta.ConsultaFolhaPonto();
@@ -66,9 +73,24 @@ namespace SisRH
         }
         private void AbrirFolhaPag(Object sender, EventArgs e)
         {
-            SisRH.Telas_Cadastro.GerarFolhadePagamento gfp = new SisRH.Telas_Cadastro.GerarFolhadePagamento();
-            Hide();
-            gfp.Show();
+            int ano;
+            int mes;
+
+            ano = DateTime.Now.Year;
+            mes = DateTime.Now.Month;
+
+            SisRH.Classes.FolhaPonto fp = new FolhaPonto();
+            if (fp.VerificarFolhaPagamento(mes, ano) == false)
+            {
+                SisRH.Telas_Cadastro.GerarFolhadePagamento gfp = new SisRH.Telas_Cadastro.GerarFolhadePagamento();
+                Hide();
+                gfp.Show();
+            }
+            else
+            {
+                MessageBox.Show("Folha de Pagamento"+mes+"/"+ano+" já gerada.");
+            }
+            
 
         }
         private void ExibirImagemButton_Click()

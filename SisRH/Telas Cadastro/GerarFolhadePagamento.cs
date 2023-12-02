@@ -73,30 +73,42 @@ namespace SisRH.Telas_Cadastro
         }
         private void GerarFolhaPagamento(object sender, EventArgs e)
         {
-            Classes.FolhaPonto fp = new FolhaPonto();
-            int ano;
-            int mes;
-
-            ano = DateTime.Now.Year;
-            mes = DateTime.Now.Month;
-
-            if (txtMatricula.Text == "CONFIRMAR" )
+            try
             {
-                DialogResult resultado = MessageBox.Show("Você deseja realmente GERAR a Folha de Pagamento?", +mes + "/" + ano, MessageBoxButtons.YesNo);
+                Classes.FolhaPonto fp = new FolhaPonto();
+                int ano;
+                int mes;
 
-                if (resultado == DialogResult.Yes)
+                ano = DateTime.Now.Year;
+                mes = DateTime.Now.Month;
+
+                if (txtMatricula.Text == "CONFIRMAR")
                 {
-                    fp.GerarFolhaPagamento(mes, ano);
+                    DialogResult resultado = MessageBox.Show("Você deseja realmente GERAR a Folha de Pagamento?", +mes + "/" + ano, MessageBoxButtons.YesNo);
+
+                    if (resultado == DialogResult.Yes)
+                    {
+                        fp.GerarFolhaPagamento(mes, ano);
+                        MessageBox.Show("A folha de pagamento do " + mes + "/" + ano + " foi gerada com sucesso!");
+                        SisRH.Menu menu = new SisRH.Menu();
+                        Hide();
+                        menu.Show();
+                    }
+                    else
+                    {
+
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("A folha de pagamento do " + mes + "/" + ano + " foi gerada com sucesso!");
+                    MessageBox.Show("A folha de pagamento do " + mes + "/" + ano + " já está gerada!");
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("A folha de pagamento do " + mes + "/" + ano + " já está gerada!");
-            }
+
+                throw ex;
+            }   
 
         }
 

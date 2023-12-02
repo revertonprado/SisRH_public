@@ -38,6 +38,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.picFoto = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,8 +55,6 @@
             this.picHome = new System.Windows.Forms.PictureBox();
             this.pcOn = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.txtMatricula = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
@@ -174,6 +174,29 @@
             this.panel8.Size = new System.Drawing.Size(561, 258);
             this.panel8.TabIndex = 41;
             // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.panel16.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel16.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel16.Location = new System.Drawing.Point(211, 149);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(155, 1);
+            this.panel16.TabIndex = 90;
+            // 
+            // txtMatricula
+            // 
+            this.txtMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.txtMatricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMatricula.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatricula.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtMatricula.Location = new System.Drawing.Point(211, 120);
+            this.txtMatricula.Multiline = true;
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(156, 30);
+            this.txtMatricula.TabIndex = 89;
+            this.txtMatricula.TextChanged += new System.EventHandler(this.MudarCorBox);
+            // 
             // btnConfirmar
             // 
             this.btnConfirmar.BackColor = System.Drawing.Color.Transparent;
@@ -188,6 +211,7 @@
             this.btnConfirmar.TabIndex = 87;
             this.btnConfirmar.Text = "Gerar Folha Pagamento";
             this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.GerarFolhaPagamento);
             this.btnConfirmar.MouseEnter += new System.EventHandler(this.btnCad_Enter);
             this.btnConfirmar.MouseLeave += new System.EventHandler(this.btnCad_Leave);
             // 
@@ -336,29 +360,6 @@
             this.label3.Size = new System.Drawing.Size(289, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Geração Folha de Pagamento";
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.panel16.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel16.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel16.Location = new System.Drawing.Point(211, 149);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(155, 1);
-            this.panel16.TabIndex = 90;
-            // 
-            // txtMatricula
-            // 
-            this.txtMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.txtMatricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatricula.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatricula.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtMatricula.Location = new System.Drawing.Point(211, 120);
-            this.txtMatricula.Multiline = true;
-            this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(156, 30);
-            this.txtMatricula.TabIndex = 89;
-            this.txtMatricula.TextChanged += new System.EventHandler(this.MudarCorBox);
             // 
             // GerarFolhadePagamento
             // 
