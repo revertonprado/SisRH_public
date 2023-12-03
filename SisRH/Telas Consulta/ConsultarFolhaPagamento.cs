@@ -14,6 +14,8 @@ using System.Windows.Forms;
 using Amazon;
 using SisRH.Classes;
 using SisRH.Properties;
+using System.Net.Mail;
+using System.Net;
 
 namespace SisRH.Telas_Consulta
 {
@@ -121,6 +123,39 @@ namespace SisRH.Telas_Consulta
             }
 
         }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right && e.RowIndex >= 0)
+            {
+                dgvFolhaPonto.ClearSelection();
+                dgvFolhaPonto.Rows[e.RowIndex].Selected = true;
+
+                contextMenuStrip1.Show(Cursor.Position);
+            }
+        }
+
+        private void GerarPDF(Object sender, EventArgs e)
+        {
+            int matricula = Convert.ToInt32(dgvFolhaPonto.SelectedRows[0].Cells["Matricula"].Value);
+            int mes = Convert.ToInt32(dgvFolhaPonto.SelectedRows[0].Cells["Mes"].Value);
+            int ano = Convert.ToInt32(dgvFolhaPonto.SelectedRows[0].Cells["Ano"].Value);
+            SisRH.Handler.Teste t = new Handler.Teste();
+            t.GerarPDFH(matricula, mes, ano, 0);
+            MessageBox.Show("PDF GERADO");
+        }
+
+        private void EnviarPDFeMAIL(Object sender, EventArgs e)
+        {
+            int matricula = Convert.ToInt32(dgvFolhaPonto.SelectedRows[0].Cells["Matricula"].Value);
+            int mes = Convert.ToInt32(dgvFolhaPonto.SelectedRows[0].Cells["Mes"].Value);
+            int ano = Convert.ToInt32(dgvFolhaPonto.SelectedRows[0].Cells["Ano"].Value);
+            SisRH.Handler.Teste t = new Handler.Teste();
+            t.GerarPDFH(matricula, mes, ano, 1);
+            
+        }
+
+
 
         private void Pesquisar(object sender, EventArgs e)
         {

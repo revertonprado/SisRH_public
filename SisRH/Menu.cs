@@ -145,6 +145,9 @@ namespace SisRH
             }
         }
 
+        
+
+
         private void FecharFolhaPonto(object sender, EventArgs e)
         {
             Classes.FolhaPonto fp = new FolhaPonto();
@@ -215,6 +218,11 @@ namespace SisRH
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
         {
 
         }

@@ -74,7 +74,20 @@ namespace SisRH.Classes
                 throw ex;
             }
         }
+        public SqlDataReader ListarFolhaPagamentoDR(int func)
+        {
+            try
+            {
+                instrucaoSql = "EXEC ListarFolhaPagamento'" + Mes_fp + "', '" + Ano_fp1 + "','" + func + "'";
+                return c.RetornarDataReader(instrucaoSql);
 
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
         public DataSet ListarFolhaPagamento(int func)
         {
             try
