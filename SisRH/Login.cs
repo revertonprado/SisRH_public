@@ -30,17 +30,33 @@ namespace SisRH
 
         private void Logar(object sender, EventArgs e)
         {
-            
+            FolhaPonto pf = new FolhaPonto();   
             u.Usu1 = txtUsuario.Text;
             u.Senha1 = txtSenha.Text;
+            int dia = DateTime.Now.Day;
+            int mes = DateTime.Now.Month;
+            int ano = DateTime.Now.Year;
             if (u.Logar() == true)
             {
+                if (pf.VerificarFPDiaria(Convert.ToInt32(txtUsuario.Text), dia, mes, ano) == false)
+                {
+                    
+                    pf.CriarFPDiaria(Convert.ToInt32(txtUsuario.Text), mes, ano, dia);
+                    MessageBox.Show("Criado Campos para registro diarioos da Folha de Ponto");
+                }
                 Session.Instance.IniciarSessao(txtUsuario.Text);
-                SisRH.Menu m = new SisRH.Menu();
-                Hide();
-                m.Show();
-                
-
+                    if (u.VerificaTrocaSenha() == true)
+                    {
+                        SisRH.Telas_Consulta.AlterarSenhaLogin l = new Telas_Consulta.AlterarSenhaLogin();
+                        Hide();
+                        l.Show();
+                    }
+                    else
+                    {
+                        SisRH.Menu m = new SisRH.Menu();
+                        Hide();
+                        m.Show();
+                    }
             }
             else
             {

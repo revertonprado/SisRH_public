@@ -16,6 +16,7 @@ using SisRH.Classes;
 using SisRH.Properties;
 using System.Net.Mail;
 using System.Net;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace SisRH.Telas_Consulta
 {
@@ -140,9 +141,13 @@ namespace SisRH.Telas_Consulta
             int matricula = Convert.ToInt32(dgvFolhaPonto.SelectedRows[0].Cells["Matricula"].Value);
             int mes = Convert.ToInt32(dgvFolhaPonto.SelectedRows[0].Cells["Mes"].Value);
             int ano = Convert.ToInt32(dgvFolhaPonto.SelectedRows[0].Cells["Ano"].Value);
+            string email = dgvFolhaPonto.SelectedRows[0].Cells["Email"].Value.ToString();
             SisRH.Handler.Teste t = new Handler.Teste();
-            t.GerarPDFH(matricula, mes, ano, 0);
+            t.GerarPDFH(matricula, mes, ano, 0, email);
             MessageBox.Show("PDF GERADO");
+            SisRH.Menu menu = new SisRH.Menu();
+            Hide();
+            menu.Show();
         }
 
         private void EnviarPDFeMAIL(Object sender, EventArgs e)
@@ -150,9 +155,13 @@ namespace SisRH.Telas_Consulta
             int matricula = Convert.ToInt32(dgvFolhaPonto.SelectedRows[0].Cells["Matricula"].Value);
             int mes = Convert.ToInt32(dgvFolhaPonto.SelectedRows[0].Cells["Mes"].Value);
             int ano = Convert.ToInt32(dgvFolhaPonto.SelectedRows[0].Cells["Ano"].Value);
+            string email = dgvFolhaPonto.SelectedRows[0].Cells["Email"].Value.ToString();
             SisRH.Handler.Teste t = new Handler.Teste();
-            t.GerarPDFH(matricula, mes, ano, 1);
-            
+            t.GerarPDFH(matricula, mes, ano, 1, email);
+            SisRH.Menu menu = new SisRH.Menu();
+            Hide();
+            menu.Show();
+
         }
 
 
@@ -182,14 +191,7 @@ namespace SisRH.Telas_Consulta
                     fp.Ano_fp1 = Convert.ToInt32(txtAno.Text);
                 }
 
-                if (txtDia.Text == "")
-                {
-                    fp.Dia_fp1 = -1;
-                }
-                else
-                {
-                    fp.Dia_fp1 = Convert.ToInt32(txtDia.Text);
-                }
+               
                 if (txtMes.Text == "")
                 {
                     fp.Mes_fp1 = -1;

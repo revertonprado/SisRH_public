@@ -305,6 +305,7 @@
     <Compile Include="Classes\EstadoCivil.cs" />
     <Compile Include="Classes\FolhaPonto.cs" />
     <Compile Include="Classes\Funcionario.cs" />
+    <Compile Include="Classes\FuncoesGerais.cs" />
     <Compile Include="Classes\ObterImagemDoS3.cs" />
     <Compile Include="Classes\SessaoAtual.cs" />
     <Compile Include="Classes\Session.cs" />
@@ -341,6 +342,12 @@
     </Compile>
     <Compile Include="Telas Cadastro\GerarFolhadePagamento.Designer.cs">
       <DependentUpon>GerarFolhadePagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas Consulta\AlterarSenhaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas Consulta\AlterarSenhaLogin.Designer.cs">
+      <DependentUpon>AlterarSenhaLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas Consulta\ConsultaFolhaPonto.cs">
       <SubType>Form</SubType>
@@ -386,6 +393,12 @@
     <Compile Include="Telas_Alterar\AlterarFp.Designer.cs">
       <DependentUpon>AlterarFp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas_Alterar\SolicitaTrocaSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas_Alterar\SolicitaTrocaSenha.Designer.cs">
+      <DependentUpon>SolicitaTrocaSenha.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -400,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas Cadastro\GerarFolhadePagamento.resx">
       <DependentUpon>GerarFolhadePagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas Consulta\AlterarSenhaLogin.resx">
+      <DependentUpon>AlterarSenhaLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas Consulta\ConsultaFolhaPonto.resx">
       <DependentUpon>ConsultaFolhaPonto.cs</DependentUpon>
@@ -431,6 +447,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas_Alterar\AlterarFp.resx">
       <DependentUpon>AlterarFp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas_Alterar\SolicitaTrocaSenha.resx">
+      <DependentUpon>SolicitaTrocaSenha.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

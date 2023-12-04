@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 using System.Data.SqlTypes;
 using System.Security.Cryptography;
+using static iText.StyledXmlParser.Jsoup.Select.Evaluator;
 
 namespace SisRH.Classes
 {
@@ -158,6 +159,41 @@ namespace SisRH.Classes
                 throw ex;
             }
         }
+
+        public void CriarFPDiaria(int id, int mes, int ano, int dia)
+        {
+            try
+            {
+                instrucaoSql = "EXEC CriarFolhaPontoDiaria'" + id + "', '" + mes + "','" + ano + "','" + dia + "'";
+                c.ExecutarComando(instrucaoSql);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+
+        public bool VerificarFPDiaria(int mat, int dia, int mes, int ano)
+        {
+            try
+            {
+                instrucaoSql = "EXEC VerficarFPDiaria'" + mat + "', '" + dia + "','" + mes + "','" + ano + "'";
+                if (c.RetornarDataReader(instrucaoSql).HasRows == false)
+                {
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+           
+        }
+
 
         public void FecharFolhaPonto(int mes, int ano)
         {

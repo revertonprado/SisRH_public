@@ -145,7 +145,13 @@ namespace SisRH
             }
         }
 
+        public void AbrirSolicitaSenha(Object sender, EventArgs e) 
+        {
+            SisRH.Telas_Alterar.SolicitaTrocaSenha sts = new Telas_Alterar.SolicitaTrocaSenha();
+            Hide();
+            sts.Show();
         
+        }
 
 
         private void FecharFolhaPonto(object sender, EventArgs e)

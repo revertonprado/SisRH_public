@@ -17,12 +17,13 @@ using Amazon.S3;
 using System.Windows.Forms;
 using System.Net.Mail;
 using System.Net;
+using Org.BouncyCastle.Crypto.Macs;
 
 namespace SisRH.Handler
 {
     internal class Teste
     {
-        public void GerarPDFH(int mat, int mes, int ano, int email)
+        public void GerarPDFH(int mat, int mes, int ano, int email, string rec)
         {
         string Nome;
         int Matricula;
@@ -33,6 +34,7 @@ namespace SisRH.Handler
         decimal IRPF;
         decimal Salario_Bruto;
         decimal Salario;
+        
 
 
         FolhaPonto fp = new FolhaPonto();
@@ -42,7 +44,7 @@ namespace SisRH.Handler
 
 
             System.Data.SqlClient.SqlDataReader ddr;
-            ddr = fp.ListarFolhaPagamentoDR(40896);
+            ddr = fp.ListarFolhaPagamentoDR(mat);
             ddr.Read();
 
 
@@ -73,17 +75,16 @@ namespace SisRH.Handler
                 table.AddCell(Salario_Bruto.ToString());
                 document.Add(table);
                 document.Close();
-
-                FazerUploadDeFotoParaS3("Holerite"+Matricula+".pdf",Matricula);
-
-                Process.Start("chrome.exe", Path.Combine(Environment.CurrentDirectory, "Holerite" + Matricula + ".pdf"));
+               
                 if (email == 1)
                 {
-                    EnviarEmailComAnexo("reverton.carmo@gmail.com", "Holerite SisRH", "Corpo Email SisRH", Path.Combine(Environment.CurrentDirectory, "Holerite" + Matricula + ".pdf"));
+                    EnviarEmailComAnexo(rec, Path.Combine(Environment.CurrentDirectory, "Holerite" + Matricula + ".pdf"));
+                    MessageBox.Show("Holerite enviado para o email!");
                 }
                 else
                 {
-
+                    FazerUploadDeFotoParaS3("Holerite" + Matricula + ".pdf", Matricula);
+                    Process.Start("chrome.exe", Path.Combine(Environment.CurrentDirectory, "Holerite" + Matricula + ".pdf"));
                 }
 
             }
@@ -109,37 +110,30 @@ namespace SisRH.Handler
             MessageBox.Show("Holerite enviado para S3 com sucesso!");
         }
 
-        static void EnviarEmailComAnexo(string destinatario, string assunto, string corpo, string caminhoAnexo)
+        static void EnviarEmailComAnexo(string destinatario, string caminhoAnexo)
         {
             try
             {
-                // Configuração do cliente SMTP para envio de e-mails
-                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com")
-                {
-                    Port = 587,
-                    Credentials = new NetworkCredential("sisrhsistemas@gmail.com", "SisRH@2023"), // Use seu token de aplicativo aqui
-                    EnableSsl = true, // Habilita a conexão segura
-                };
-
-                // Configuração do e-mail
-                MailMessage mailMessage = new MailMessage
-                {
-                    From = new MailAddress("sisrhsistemas@gmail.com"),
-                    Subject = assunto,
-                    Body = corpo,
-                    IsBodyHtml = true,
-                };
-
-                // Adiciona o anexo (holerite em PDF)
                 Attachment anexo = new Attachment(caminhoAnexo);
-                mailMessage.Attachments.Add(anexo);
+                // Configuração do e-mail
+                MailMessage mailMessage = new MailMessage();
+                {
+                    var smtpClient = new SmtpClient("smtp.outlook.com",587);
+                    smtpClient.EnableSsl = true;
+                    smtpClient.Timeout = 60 * 60;
+                    smtpClient.UseDefaultCredentials = false;
+                    smtpClient.Credentials = new NetworkCredential("reverton.carmo@aluno.unip.br","Pr@do@2002@");
+                    mailMessage.From = new MailAddress("reverton.carmo@aluno.unip.br", "SisRH");
+                    mailMessage.Body = "Envio de Holeite referente ao mes de";
+                    mailMessage.Subject = "Envio Holerite";
+                    mailMessage.IsBodyHtml = true;
+                    mailMessage.Priority = MailPriority.Normal;
+                    mailMessage.To.Add(destinatario);
+                    mailMessage.Attachments.Add(anexo);
+                    smtpClient.Send(mailMessage);
+                    
+                };
 
-                // Adiciona o destinatário
-                mailMessage.To.Add(destinatario);
-
-                smtpClient.UseDefaultCredentials = true;
-                // Envia o e-mail
-                smtpClient.Send(mailMessage);
             }
             catch (Exception ex)
             {

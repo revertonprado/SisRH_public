@@ -39,6 +39,9 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.dgvFolhaPonto = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tooleditar = new System.Windows.Forms.ToolStripMenuItem();
+            this.enviarHoleritePorEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel8 = new System.Windows.Forms.Panel();
             this.picHome = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -53,24 +56,18 @@
             this.txtMes = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.txtDia = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnLogar = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tooleditar = new System.Windows.Forms.ToolStripMenuItem();
-            this.enviarHoleritePorEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFolhaPonto)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcOn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -172,6 +169,28 @@
             this.dgvFolhaPonto.TabIndex = 162;
             this.dgvFolhaPonto.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tooleditar,
+            this.enviarHoleritePorEmailToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(205, 48);
+            // 
+            // tooleditar
+            // 
+            this.tooleditar.Name = "tooleditar";
+            this.tooleditar.Size = new System.Drawing.Size(204, 22);
+            this.tooleditar.Text = "Gerar Holerite";
+            this.tooleditar.Click += new System.EventHandler(this.GerarPDF);
+            // 
+            // enviarHoleritePorEmailToolStripMenuItem
+            // 
+            this.enviarHoleritePorEmailToolStripMenuItem.Name = "enviarHoleritePorEmailToolStripMenuItem";
+            this.enviarHoleritePorEmailToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.enviarHoleritePorEmailToolStripMenuItem.Text = "Enviar Holerite por Email";
+            this.enviarHoleritePorEmailToolStripMenuItem.Click += new System.EventHandler(this.EnviarPDFeMAIL);
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
@@ -270,7 +289,7 @@
             this.txtAno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAno.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAno.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtAno.Location = new System.Drawing.Point(724, 175);
+            this.txtAno.Location = new System.Drawing.Point(685, 179);
             this.txtAno.MaxLength = 20;
             this.txtAno.Multiline = true;
             this.txtAno.Name = "txtAno";
@@ -282,7 +301,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(721, 152);
+            this.label4.Location = new System.Drawing.Point(682, 156);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 16);
             this.label4.TabIndex = 175;
@@ -291,7 +310,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.panel2.Location = new System.Drawing.Point(724, 195);
+            this.panel2.Location = new System.Drawing.Point(685, 199);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(107, 1);
             this.panel2.TabIndex = 174;
@@ -302,7 +321,7 @@
             this.txtMes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMes.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMes.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtMes.Location = new System.Drawing.Point(573, 174);
+            this.txtMes.Location = new System.Drawing.Point(540, 177);
             this.txtMes.MaxLength = 20;
             this.txtMes.Multiline = true;
             this.txtMes.Name = "txtMes";
@@ -314,7 +333,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(570, 151);
+            this.label3.Location = new System.Drawing.Point(537, 154);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 16);
             this.label3.TabIndex = 172;
@@ -323,42 +342,10 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.panel9.Location = new System.Drawing.Point(573, 194);
+            this.panel9.Location = new System.Drawing.Point(540, 197);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(107, 1);
             this.panel9.TabIndex = 171;
-            // 
-            // txtDia
-            // 
-            this.txtDia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.txtDia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDia.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDia.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtDia.Location = new System.Drawing.Point(414, 173);
-            this.txtDia.MaxLength = 20;
-            this.txtDia.Multiline = true;
-            this.txtDia.Name = "txtDia";
-            this.txtDia.Size = new System.Drawing.Size(107, 20);
-            this.txtDia.TabIndex = 170;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(411, 150);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 16);
-            this.label1.TabIndex = 169;
-            this.label1.Text = "Dia";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.panel7.Location = new System.Drawing.Point(414, 193);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(107, 1);
-            this.panel7.TabIndex = 168;
             // 
             // txtMatricula
             // 
@@ -366,7 +353,7 @@
             this.txtMatricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMatricula.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatricula.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtMatricula.Location = new System.Drawing.Point(255, 172);
+            this.txtMatricula.Location = new System.Drawing.Point(395, 176);
             this.txtMatricula.MaxLength = 20;
             this.txtMatricula.Multiline = true;
             this.txtMatricula.Name = "txtMatricula";
@@ -378,7 +365,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(252, 149);
+            this.label2.Location = new System.Drawing.Point(392, 153);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 16);
             this.label2.TabIndex = 166;
@@ -392,7 +379,7 @@
             this.btnLogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLogar.Image = global::SisRH.Properties.Resources.Captura_de_tela_2023_09_11_213254_removebg_preview;
-            this.btnLogar.Location = new System.Drawing.Point(876, 166);
+            this.btnLogar.Location = new System.Drawing.Point(813, 170);
             this.btnLogar.Name = "btnLogar";
             this.btnLogar.Size = new System.Drawing.Size(111, 33);
             this.btnLogar.TabIndex = 165;
@@ -403,32 +390,10 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.panel4.Location = new System.Drawing.Point(255, 192);
+            this.panel4.Location = new System.Drawing.Point(395, 196);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(107, 1);
             this.panel4.TabIndex = 164;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tooleditar,
-            this.enviarHoleritePorEmailToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(205, 48);
-            // 
-            // tooleditar
-            // 
-            this.tooleditar.Name = "tooleditar";
-            this.tooleditar.Size = new System.Drawing.Size(204, 22);
-            this.tooleditar.Text = "Gerar Holerite";
-            this.tooleditar.Click += new System.EventHandler(this.GerarPDF);
-            // 
-            // enviarHoleritePorEmailToolStripMenuItem
-            // 
-            this.enviarHoleritePorEmailToolStripMenuItem.Name = "enviarHoleritePorEmailToolStripMenuItem";
-            this.enviarHoleritePorEmailToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.enviarHoleritePorEmailToolStripMenuItem.Text = "Enviar Holerite por Email";
-            this.enviarHoleritePorEmailToolStripMenuItem.Click += new System.EventHandler(this.EnviarPDFeMAIL);
             // 
             // ConsultarFolhaPagamento
             // 
@@ -442,9 +407,6 @@
             this.Controls.Add(this.txtMes);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel9);
-            this.Controls.Add(this.txtDia);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnLogar);
@@ -461,13 +423,13 @@
             this.Text = "ConsultarFolhaPagamento";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFolhaPonto)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcOn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -496,9 +458,6 @@
         private System.Windows.Forms.TextBox txtMes;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox txtDia;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox txtMatricula;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLogar;

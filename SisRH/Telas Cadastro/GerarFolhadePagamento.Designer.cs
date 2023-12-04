@@ -127,7 +127,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 364);
+            this.panel7.Size = new System.Drawing.Size(130, 364);
             this.panel7.TabIndex = 40;
             // 
             // button2
@@ -140,7 +140,7 @@
             this.button2.ForeColor = System.Drawing.Color.DarkRed;
             this.button2.Location = new System.Drawing.Point(7, 303);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(184, 55);
+            this.button2.Size = new System.Drawing.Size(120, 55);
             this.button2.TabIndex = 38;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
@@ -153,7 +153,7 @@
             this.picFoto.Image = global::SisRH.Properties.Resources.nova_logo_removebg_preview;
             this.picFoto.Location = new System.Drawing.Point(9, 7);
             this.picFoto.Name = "picFoto";
-            this.picFoto.Size = new System.Drawing.Size(182, 166);
+            this.picFoto.Size = new System.Drawing.Size(115, 93);
             this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFoto.TabIndex = 6;
             this.picFoto.TabStop = false;
@@ -169,7 +169,7 @@
             this.panel8.Controls.Add(this.panel13);
             this.panel8.Controls.Add(this.panel4);
             this.panel8.Controls.Add(this.panel2);
-            this.panel8.Location = new System.Drawing.Point(228, 70);
+            this.panel8.Location = new System.Drawing.Point(193, 70);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(561, 258);
             this.panel8.TabIndex = 41;
@@ -299,15 +299,15 @@
             this.panel15.Controls.Add(this.label3);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.panel15.Location = new System.Drawing.Point(202, 2);
+            this.panel15.Location = new System.Drawing.Point(132, 2);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(610, 39);
+            this.panel15.Size = new System.Drawing.Size(680, 39);
             this.panel15.TabIndex = 42;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SisRH.Properties.Resources.home__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(530, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(600, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(34, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -320,7 +320,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SisRH.Properties.Resources.power_on__3_;
-            this.pictureBox2.Location = new System.Drawing.Point(570, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(640, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(34, 35);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
