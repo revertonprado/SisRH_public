@@ -14,6 +14,7 @@ using Amazon.S3;
 using SisRH.Properties;
 using SisRH.Classes;
 using Amazon;
+using System.Data.Common;
 
 namespace SisRH
 {
@@ -69,6 +70,13 @@ namespace SisRH
             SisRH.Telas_Consulta.ConsultaFolhaPonto fp = new SisRH.Telas_Consulta.ConsultaFolhaPonto();
             Hide();
             fp.Show();
+
+        }
+        private void AbrirConsultaFunc(Object sender, EventArgs e)
+        {
+            SisRH.Telas_Consulta.ConsultaFunc f = new SisRH.Telas_Consulta.ConsultaFunc();
+            Hide();
+            f.Show();
 
         }
         private void AbrirFolhaPag(Object sender, EventArgs e)
@@ -182,6 +190,22 @@ namespace SisRH
             }
             
         }
+
+        private void Apontar(Object sender, EventArgs e)
+        {
+            FolhaPonto fp = new FolhaPonto();
+            int idfolha = Convert.ToInt32(fp.ListarApontAtual(Convert.ToInt32(label13.Text)));
+            int dia = DateTime.Now.Day;
+            int mes = DateTime.Now.Month;
+            int ano = DateTime.Now.Year;
+            TimeSpan hora;
+            TimeSpan.TryParse(Convert.ToString(DateTime.Now), out hora);
+            fp.Apontar(dia, mes, ano, hora, idfolha);
+            MessageBox.Show("Apontamento realizado com sucesso");
+            
+        }
+
+
 
         private void label8_Click(object sender, EventArgs e)
         {

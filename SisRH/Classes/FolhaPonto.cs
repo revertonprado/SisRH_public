@@ -89,6 +89,20 @@ namespace SisRH.Classes
                 throw ex;
             }
         }
+        public SqlDataReader ListarApontAtual(int func)
+        {
+            try
+            {
+                instrucaoSql = "EXEC ListarUltimaFP'" + func + "'";
+                return c.RetornarDataReader(instrucaoSql);
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
         public DataSet ListarFolhaPagamento(int func)
         {
             try
@@ -165,6 +179,20 @@ namespace SisRH.Classes
             try
             {
                 instrucaoSql = "EXEC CriarFolhaPontoDiaria'" + id + "', '" + mes + "','" + ano + "','" + dia + "'";
+                c.ExecutarComando(instrucaoSql);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public void Apontar(int dia, int mes, int ano, TimeSpan apont,  int id_apont)
+        {
+            try
+            {
+                instrucaoSql = "EXEC ApontarFP'" + dia + "', '" + mes + "','" + ano + "','" + apont +"','" + id_apont +"'";
                 c.ExecutarComando(instrucaoSql);
             }
             catch (Exception ex)
