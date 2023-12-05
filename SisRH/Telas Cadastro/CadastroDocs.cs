@@ -258,8 +258,8 @@ namespace SisRH.Telas_Cadastro
 
         private void ExibirImagemButton_Click()
         {
-            string accessKey = "AKIAVM3YRTJTT6A2QL7R";
-            string secretKey = "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";
+            string accessKey = "";
+            string secretKey = "";
             string bucketName = "docspim4semestre";
             string objectKey = "Fotos-Perfil/" + txtMatricula.Text;
 
@@ -310,8 +310,8 @@ namespace SisRH.Telas_Cadastro
 
         private void ExibirCPF()
         {
-            string accessKey = "AKIAVM3YRTJTT6A2QL7R";
-            string secretKey = "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";
+            string accessKey = "";
+            string secretKey = "";
             string bucketName = "docspim4semestre";
             string objectKey = "Docs/" + txtMatricula.Text + "/" + "CPF";
 
@@ -362,8 +362,8 @@ namespace SisRH.Telas_Cadastro
 
         private void ExibirRG()
         {
-            string accessKey = "AKIAVM3YRTJTT6A2QL7R";
-            string secretKey = "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";
+            string accessKey = "";
+            string secretKey = "";
             string bucketName = "docspim4semestre";
             string objectKey = "Docs/" + txtMatricula.Text + "/"+ "RG";
 
@@ -414,8 +414,8 @@ namespace SisRH.Telas_Cadastro
 
         private void ExibirNasc()
         {
-            string accessKey = "AKIAVM3YRTJTT6A2QL7R";
-            string secretKey = "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";
+            string accessKey = "";
+            string secretKey = "";
             string bucketName = "docspim4semestre";
             string objectKey = "Docs/" + txtMatricula.Text + "/" + "Certidao-Nascimento";
 
@@ -466,8 +466,8 @@ namespace SisRH.Telas_Cadastro
 
         private void ExibirCas()
         {
-            string accessKey = "AKIAVM3YRTJTT6A2QL7R";
-            string secretKey = "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";
+            string accessKey = "";
+            string secretKey = "";
             string bucketName = "docspim4semestre";
             string objectKey = "Docs/" + txtMatricula.Text + "/" + "Certidao-Casamento";
 
@@ -518,8 +518,8 @@ namespace SisRH.Telas_Cadastro
 
         private void ExibirRes()
         {
-            string accessKey = "AKIAVM3YRTJTT6A2QL7R";
-            string secretKey = "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";
+            string accessKey = "";
+            string secretKey = "";
             string bucketName = "docspim4semestre";
             string objectKey = "Docs/" + txtMatricula.Text + "/" + "Reservista";
 
@@ -571,8 +571,8 @@ namespace SisRH.Telas_Cadastro
 
         private void ExibirCTPS()
         {
-            string accessKey = "AKIAVM3YRTJTT6A2QL7R";
-            string secretKey = "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";
+            string accessKey = "";
+            string secretKey = "";
             string bucketName = "docspim4semestre";
             string objectKey = "Docs/" + txtMatricula.Text + "/" + "CTPS";
 
@@ -623,8 +623,8 @@ namespace SisRH.Telas_Cadastro
 
         private void ExibirEscolaridade()
         {
-            string accessKey = "AKIAVM3YRTJTT6A2QL7R";
-            string secretKey = "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";
+            string accessKey = "";
+            string secretKey = "";
             string bucketName = "docspim4semestre";
             string objectKey = "Docs/" + txtMatricula.Text + "/" + "Escolaridade";
 
@@ -675,8 +675,8 @@ namespace SisRH.Telas_Cadastro
 
         private void ExibirComprovRes()
         {
-            string accessKey = "AKIAVM3YRTJTT6A2QL7R";
-            string secretKey = "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";
+            string accessKey = "";
+            string secretKey = "";
             string bucketName = "docspim4semestre";
             string objectKey = "Docs/" + txtMatricula.Text + "/" + "Comprov-Residencia";
 
@@ -728,7 +728,7 @@ namespace SisRH.Telas_Cadastro
 
         private void FazerUploadDeFotoParaS3CPF(string caminhoLocalDaFoto)
         {
-            var s3Client = new AmazonS3Client("AKIAVM3YRTJTT6A2QL7R", "qK4yVYchMMYZVBymyUU93SQAzX+EhKyDuNwClSEU", Amazon.RegionEndpoint.USEast1);
+            var s3Client = new AmazonS3Client("", "", Amazon.RegionEndpoint.USEast1);
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
@@ -742,7 +742,7 @@ namespace SisRH.Telas_Cadastro
 
         private void FazerUploadDeFotoParaS3RG(string caminhoLocalDaFoto)
         {
-            var s3Client = new AmazonS3Client("AKIAVM3YRTJTT6A2QL7R", "qK4yVYchMMYZVBymyUU93SQAzX+EhKyDuNwClSEU", Amazon.RegionEndpoint.USEast1);
+            var s3Client = new AmazonS3Client("", "+", Amazon.RegionEndpoint.USEast1);
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
@@ -756,7 +756,7 @@ namespace SisRH.Telas_Cadastro
 
         private void FazerUploadDeFotoParaS3Nasc(string caminhoLocalDaFoto)
         {
-            var s3Client = new AmazonS3Client("AKIAVM3YRTJTT6A2QL7R", "qK4yVYchMMYZVBymyUU93SQAzX+EhKyDuNwClSEU", Amazon.RegionEndpoint.USEast1);
+            var s3Client = new AmazonS3Client("", "+", Amazon.RegionEndpoint.USEast1);
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
@@ -770,7 +770,7 @@ namespace SisRH.Telas_Cadastro
 
         private void FazerUploadDeFotoParaS3Cas(string caminhoLocalDaFoto)
         {
-            var s3Client = new AmazonS3Client("AKIAVM3YRTJTT6A2QL7R", "qK4yVYchMMYZVBymyUU93SQAzX+EhKyDuNwClSEU", Amazon.RegionEndpoint.USEast1);
+            var s3Client = new AmazonS3Client("", "+", Amazon.RegionEndpoint.USEast1);
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
@@ -784,7 +784,7 @@ namespace SisRH.Telas_Cadastro
 
         private void FazerUploadDeFotoParaS3Res(string caminhoLocalDaFoto)
         {
-            var s3Client = new AmazonS3Client("AKIAVM3YRTJTT6A2QL7R", "qK4yVYchMMYZVBymyUU93SQAzX+EhKyDuNwClSEU", Amazon.RegionEndpoint.USEast1);
+            var s3Client = new AmazonS3Client("", "", Amazon.RegionEndpoint.USEast1);
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
@@ -798,7 +798,7 @@ namespace SisRH.Telas_Cadastro
 
         private void FazerUploadDeFotoParaS3ctps(string caminhoLocalDaFoto)
         {
-            var s3Client = new AmazonS3Client("AKIAVM3YRTJTT6A2QL7R", "qK4yVYchMMYZVBymyUU93SQAzX+EhKyDuNwClSEU", Amazon.RegionEndpoint.USEast1);
+            var s3Client = new AmazonS3Client("", "", Amazon.RegionEndpoint.USEast1);
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
@@ -812,7 +812,7 @@ namespace SisRH.Telas_Cadastro
 
         private void FazerUploadDeFotoParaS3Escolaridade(string caminhoLocalDaFoto)
         {
-            var s3Client = new AmazonS3Client("AKIAVM3YRTJTT6A2QL7R", "qK4yVYchMMYZVBymyUU93SQAzX+EhKyDuNwClSEU", Amazon.RegionEndpoint.USEast1);
+            var s3Client = new AmazonS3Client("", "", Amazon.RegionEndpoint.USEast1);
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
@@ -826,7 +826,7 @@ namespace SisRH.Telas_Cadastro
 
         private void FazerUploadDeFotoParaS3ComprRes(string caminhoLocalDaFoto)
         {
-            var s3Client = new AmazonS3Client("AKIAVM3YRTJTT6A2QL7R", "qK4yVYchMMYZVBymyUU93SQAzX+EhKyDuNwClSEU", Amazon.RegionEndpoint.USEast1);
+            var s3Client = new AmazonS3Client("", "", Amazon.RegionEndpoint.USEast1);
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
