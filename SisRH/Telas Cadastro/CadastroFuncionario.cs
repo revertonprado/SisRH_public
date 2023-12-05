@@ -187,8 +187,8 @@ namespace SisRH.Telas_Cadastro
 
         private void ExibirImagemButton_Click(object sender, EventArgs e)
         {
-            string accessKey = "AKIAVM3YRTJTT6A2QL7R";
-            string secretKey = "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";
+            string accessKey = "";
+            string secretKey = "+";
             string bucketName = "docspim4semestre";
             string objectKey = "Fotos-Perfil/" + txtMatricula.Text;
 
@@ -270,7 +270,7 @@ namespace SisRH.Telas_Cadastro
 
         private void FazerUploadDeFotoParaS3(string caminhoLocalDaFoto)
         {
-            var s3Client = new AmazonS3Client("AKIAVM3YRTJTT6A2QL7R", "qK4yVYchMMYZVBymyUU93SQAzX+EhKyDuNwClSEU", Amazon.RegionEndpoint.USEast1);
+            var s3Client = new AmazonS3Client("", "+", Amazon.RegionEndpoint.USEast1);
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
