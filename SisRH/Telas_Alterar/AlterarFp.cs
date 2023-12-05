@@ -97,7 +97,7 @@ namespace SisRH.Telas_Alterar
 
         private void FazerUploadDeFotoParaS3Declaracao(string caminhoLocalDaFoto)
         {
-            var s3Client = new AmazonS3Client("AKIAVM3YRTJTT6A2QL7R", "qK4yVYchMMYZVBymyUU93SQAzX+EhKyDuNwClSEU", Amazon.RegionEndpoint.USEast1);
+            var s3Client = new AmazonS3Client("", "", Amazon.RegionEndpoint.USEast1);
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
@@ -138,7 +138,7 @@ namespace SisRH.Telas_Alterar
 
         private void FazerUploadDeFotoParaS3Atestado(string caminhoLocalDaFoto)
         {
-            var s3Client = new AmazonS3Client("AKIAVM3YRTJTT6A2QL7R", "qK4yVYchMMYZVBymyUU93SQAzX+EhKyDuNwClSEU", Amazon.RegionEndpoint.USEast1);
+            var s3Client = new AmazonS3Client("", "+", Amazon.RegionEndpoint.USEast1);
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
