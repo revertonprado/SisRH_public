@@ -16,7 +16,7 @@ namespace SisRH
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Telas_Cadastro.CadastroFuncionario());
+            Application.Run(new Login());
         }
     }
 }
