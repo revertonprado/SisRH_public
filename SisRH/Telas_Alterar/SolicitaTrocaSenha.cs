@@ -41,8 +41,8 @@ namespace SisRH.Telas_Alterar
 
         private void ExibirImagemButton_Click()
         {
-            string accessKey = "AKIAVM3YRTJTT6A2QL7R";
-            string secretKey = "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";
+            string accessKey = "";
+            string secretKey = "";
             string bucketName = "docspim4semestre";
             string objectKey = "Fotos-Perfil/" + label13.Text;
 
