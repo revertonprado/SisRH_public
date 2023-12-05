@@ -96,7 +96,7 @@ namespace SisRH.Handler
             int Mes = DateTime.Now.Month;
             int Dia = DateTime.Now.Day;
 
-            var s3Client = new AmazonS3Client("AKIAVM3YRTJTT6A2QL7R", "qK4yVYchMMYZVBymyUU93SQAzX+EhKyDuNwClSEU", Amazon.RegionEndpoint.USEast1);
+            var s3Client = new AmazonS3Client("", "", Amazon.RegionEndpoint.USEast1);
             var transferUtility = new TransferUtility(s3Client);
 
             string bucketName = "docspim4semestre";
@@ -122,7 +122,7 @@ namespace SisRH.Handler
                     smtpClient.EnableSsl = true;
                     smtpClient.Timeout = 60 * 60;
                     smtpClient.UseDefaultCredentials = false;
-                    smtpClient.Credentials = new NetworkCredential("reverton.carmo@aluno.unip.br","Pr@do@2002@");
+                    smtpClient.Credentials = new NetworkCredential("reverton.carmo@aluno.unip.br","");
                     mailMessage.From = new MailAddress("reverton.carmo@aluno.unip.br", "SisRH");
                     mailMessage.Body = "Envio de Holeite referente ao mes de";
                     mailMessage.Subject = "Envio Holerite";
