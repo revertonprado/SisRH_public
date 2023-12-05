@@ -25,7 +25,7 @@ namespace SisRH.Classes
         
         private static string instrucaoSql;
         
-        private static string stringConexao = "server=pim4semestreteste.database.windows.net;database=SisRH;user id=masteruserteste;password=SisRH@2023!;";
+        private static string stringConexao = "server=pim4semestreteste.database.windows.net;database=SisRH;user id=masteruserteste;password=!;";
 
         public static SqlConnection ConectarBanco()
         {
